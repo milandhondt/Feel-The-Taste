@@ -1,4 +1,5 @@
 import { Box, Flex, IconButton, Stack, Text, Collapse } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItem, Button } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
@@ -28,29 +29,31 @@ const Navbar = () => {
         <Flex display={{ base: 'none', md: 'flex' }} alignItems="center">
           <Stack direction="row" spacing={16} alignItems="center">
             <NavLink to="/over-ons">
-              <Text fontSize="lg">Over ons</Text>
-            </NavLink>
-            <NavLink to="/diensten-en-producten">
-              <Text fontSize="lg">Diensten en producten</Text>
-            </NavLink>
-            <NavLink to="/voor-horeca">
-              <Text fontSize="lg">Voor horeca</Text>
-            </NavLink>
-            <NavLink to="/voor-blinden-en-slechtzienden">
-              <Text fontSize="lg">Voor blinden en slechtzienden</Text>
-            </NavLink>
-            <NavLink to="/samenwerkingen">
-              <Text fontSize="lg">Samenwerkingen</Text>
-            </NavLink>
-            <NavLink to="/steun-ons">
-              <Text fontSize="lg">Steun ons</Text>
-            </NavLink>
-            <NavLink to="/testimonials">
-              <Text fontSize="lg">Testimonials</Text>
+              <Text fontSize="lg">Over Ons</Text>
             </NavLink>
             <NavLink to="/contact">
               <Text fontSize="lg">Contact</Text>
             </NavLink>
+            <Menu>
+              <MenuButton as={Button} colorScheme="white" variant="outline" fontSize="lg">
+                Meer
+              </MenuButton>
+              <MenuList bg="gray.800" color="white">
+                <MenuItem as={NavLink} to="/diensten-en-producten"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Diensten & Producten</MenuItem>
+                <MenuItem as={NavLink} to="/voor-horeca"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Voor Horeca</MenuItem>
+                <MenuItem as={NavLink} to="/voor-blinden-en-slechtzienden"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>
+                  Voor Blinden en Slechtzienden</MenuItem>
+                <MenuItem as={NavLink} to="/samenwerkingen"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Samenwerkingen</MenuItem>
+                <MenuItem as={NavLink} to="/steun-ons"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Steun Ons Project</MenuItem>
+                <MenuItem as={NavLink} to="/testimonials" bg="gray.800" color="white"
+                  _hover={{ bg: 'gray.700' }}>Testimonials</MenuItem>
+              </MenuList>
+            </Menu>
           </Stack>
         </Flex>
       </Flex>
@@ -63,29 +66,31 @@ const Navbar = () => {
           py={4}
         >
           <NavLink to="/over-ons">
-            <Text fontSize="lg">Over ons</Text>
-          </NavLink>
-          <NavLink to="/diensten-en-producten">
-            <Text fontSize="lg">Diensten en producten</Text>
-          </NavLink>
-          <NavLink to="/voor-horeca">
-            <Text fontSize="lg">Voor horeca</Text>
-          </NavLink>
-          <NavLink to="/voor-blinden-en-slechtzienden">
-            <Text fontSize="lg">Voor blinden en slechtzienden</Text>
-          </NavLink>
-          <NavLink to="/samenwerkingen">
-            <Text fontSize="lg">Samenwerkingen</Text>
-          </NavLink>
-          <NavLink to="/steun-ons">
-            <Text fontSize="lg">Steun ons</Text>
-          </NavLink>
-          <NavLink to="/testimonials">
-            <Text fontSize="lg">Testimonials</Text>
+            <Text fontSize="lg">Over Ons</Text>
           </NavLink>
           <NavLink to="/contact">
             <Text fontSize="lg">Contact</Text>
           </NavLink>
+          <Menu>
+            <MenuButton as={Button} colorScheme="white" variant="outline" fontSize="lg">
+              Meer
+            </MenuButton>
+            <MenuList bg="gray.800" color="white">
+              <MenuItem as={NavLink} to="/diensten-en-producten"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Diensten & Producten</MenuItem>
+              <MenuItem as={NavLink} to="/voor-horeca"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Voor Horeca</MenuItem>
+              <MenuItem as={NavLink} to="/voor-blinden-en-slechtzienden"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>
+                Voor Blinden en Slechtzienden</MenuItem>
+              <MenuItem as={NavLink} to="/samenwerkingen"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Samenwerkingen</MenuItem>
+              <MenuItem as={NavLink} to="/steun-ons"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Steun Ons Project</MenuItem>
+              <MenuItem as={NavLink} to="/testimonials"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Testimonials</MenuItem>
+            </MenuList>
+          </Menu>
         </Stack>
       </Collapse>
     </Box>
