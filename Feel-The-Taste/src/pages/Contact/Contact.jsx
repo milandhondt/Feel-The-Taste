@@ -21,15 +21,15 @@ const Contact = () => {
     event.preventDefault();
 
     const formPayload = new FormData();
-    formPayload.append('access_key'); //access key in .env zetten
-    formPayload.append('name', formData.name);
-    formPayload.append('email', formData.email);
-    formPayload.append('telefoon', formData.telefoon);
-    formPayload.append('bedrijfsnaam', formData.bedrijfsnaam);
-    formPayload.append('locatie', formData.locatie);
-    formPayload.append('message', formData.message);
 
     try {
+      formPayload.append('access_key'); //TODO access key in .env zetten
+      formPayload.append('name', formData.name);
+      formPayload.append('email', formData.email);
+      formPayload.append('telefoon', formData.telefoon);
+      formPayload.append('bedrijfsnaam', formData.bedrijfsnaam);
+      formPayload.append('locatie', formData.locatie);
+      formPayload.append('message', formData.message);
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formPayload,
@@ -56,8 +56,8 @@ const Contact = () => {
           isClosable: true,
         });
       }
-    } catch (error) {
-      console.error('Error:', error);
+      // eslint-disable-next-line no-unused-vars
+    } catch (e) {
       toast({
         title: 'Fout opgetreden.',
         description: 'Er is een fout opgetreden. Probeer het opnieuw.',
