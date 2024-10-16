@@ -1,10 +1,11 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
+import Titel from '../../components/Titel';
 
 const OverOns = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
       <VStack spacing={6} align="start">
-        <Heading as="h1" size="2xl">Over Ons</Heading>
+        <Titel titel={'Over Ons'} />
         <Text fontSize="lg">
           Welkom bij Feel the Taste. Wij zijn gepassioneerd over het creëren van
           toegankelijke menukaarten voor blinden en slechtzienden.

@@ -52,6 +52,8 @@ const Navbar = () => {
                   bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Steun Ons Project</MenuItem>
                 <MenuItem as={NavLink} to="/testimonials" bg="gray.800" color="white"
                   _hover={{ bg: 'gray.700' }}>Testimonials</MenuItem>
+                <MenuItem as={NavLink} to="/sponsors"
+                  bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Sponsors</MenuItem>
               </MenuList>
             </Menu>
           </Stack>
@@ -89,6 +91,8 @@ const Navbar = () => {
                 bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Steun Ons Project</MenuItem>
               <MenuItem as={NavLink} to="/testimonials"
                 bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Testimonials</MenuItem>
+              <MenuItem as={NavLink} to="/sponsors"
+                bg="gray.800" color="white" _hover={{ bg: 'gray.700' }}>Sponsors</MenuItem>
             </MenuList>
           </Menu>
         </Stack>

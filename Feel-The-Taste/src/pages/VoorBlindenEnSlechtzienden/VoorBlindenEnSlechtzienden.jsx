@@ -1,10 +1,11 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
+import Titel from '../../components/Titel';
 
 const VoorBlindenEnSlechtzienden = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
       <VStack spacing={6} align="start">
-        <Heading as="h1" size="2xl">Voor Blinden en Slechtzienden</Heading>
+        <Titel titel={'Voor Blinden en Slechtzienden'} />
         <Text fontSize="lg">
           Bij Feel the Taste begrijpen we de unieke
           uitdagingen waarmee blinden en slechtzienden te maken hebben in de horeca.

@@ -1,10 +1,11 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
+import Titel from '../../components/Titel';
 
 const Testimonials = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
       <VStack spacing={6} align="start">
-        <Heading as="h1" size="2xl">Testimonials</Heading>
+        <Titel titel={'Testimonials'} />
         <Text fontSize="lg">
           We waarderen de feedback van onze gebruikers.
           Hier zijn enkele getuigenissen van blinden en slechtzienden die onze braille menukaarten hebben gebruikt:

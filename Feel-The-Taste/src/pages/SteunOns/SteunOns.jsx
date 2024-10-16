@@ -1,10 +1,11 @@
-import { Box, Heading, Text, VStack, Link } from '@chakra-ui/react';
+import { Box, Text, VStack, Link } from '@chakra-ui/react';
+import Titel from '../../components/Titel';
 
 const SteunOnsProject = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
       <VStack spacing={6} align="start">
-        <Heading as="h1" size="2xl">Steun Ons Project</Heading>
+        <Titel titel={'Steun ons project'} />
         <Text fontSize="lg">
           Bij Feel the Taste zijn we toegewijd aan het verbeteren
           van de toegankelijkheid in de horeca door middel van

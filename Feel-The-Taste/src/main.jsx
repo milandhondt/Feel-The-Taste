@@ -14,6 +14,7 @@ import VoorBlindenEnSlechtzienden from './pages/VoorBlindenEnSlechtzienden/VoorB
 import Samenwerkingen from './pages/Samenwerkingen/Samenwerkingen';
 import SteunOns from './pages/SteunOns/SteunOns';
 import Testimonials from './pages/Testimonials/Testimonials';
+import Sponsors from './pages/Sponsors/Sponsors';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: '/testimonials',
         element: <Testimonials />,
+      },
+      {
+        path: '/sponsors',
+        element: <Sponsors />,
       },
       {
         path: '/voor-blinden-en-slechtzienden',

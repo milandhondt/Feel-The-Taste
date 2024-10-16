@@ -1,10 +1,11 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
+import Titel from '../../components/Titel';
 
 const VoorHoreca = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
       <VStack spacing={6} align="start">
-        <Heading as="h1" size="2xl">Voor Horeca</Heading>
+        <Titel titel={'Voor Horeca'} />
         <Text fontSize="lg">
           Toegankelijkheid is essentieel in de horeca.
           Het zorgt ervoor dat iedereen, ongeacht hun beperkingen, kan genieten van een geweldige ervaring.
