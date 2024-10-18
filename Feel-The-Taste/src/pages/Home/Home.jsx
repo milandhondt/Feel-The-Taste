@@ -1,21 +1,34 @@
-import { Box, Heading, Text, Button, VStack } from '@chakra-ui/react';
+import { Box, Button, VStack, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import Titel from '../../components/Titel';
+import Tekstblok from '../../components/Tekstblok';
+import Tussentitel from '../../components/Tussentitel';
+import Productenlijst from '../../components/Producten/Productenlijst';
+import { producten } from '../../api/producten';
 
 const Home = () => {
   return (
-    <Box bg="white" color="gray.800" minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4}>
+    <Box bg="#FFFDE7" color="gray.800"
+      minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4}>
+      <Link>
+      </Link>
       <VStack spacing={6}>
-        <Heading as="h1" size="2xl">
-          Welkom bij Feel the Taste
-        </Heading>
-        <Text fontSize="lg" textAlign="center" maxW="600px">
-          Mijn naam is Milan en ik maakte deze website! Momenteel is deze nog niet operationeel, en moeten er
-          nog allerlei teksten toegevoegd worden door Jarno en zijn maatjes, en daarom gebruik ik in de tussentijd
-          wat opvultext. Zo kan ik namelijk zien of de pagina er mooi uitziet, en eventuele aanpassingen maken als dit
-          niet het geval is :p
-        </Text>
+        <Titel titel={'Welkom bij feel the taste!'} />
+        <Image
+          src="/logotje.png"
+          alt="Logo van feel the taste"
+          boxSize="300px"
+          objectFit="cover"
+        />
+        <Tussentitel titel={'Toegankelijke menukaarten voor iedereen'} />
+        <Tekstblok tekst={'Bij feel the taste zorgen we voor inclusie met braille en vergrote menukaarten. ' +
+          'Geef al je gasten een zorgeloze en comfortabele eetervaring, zonder compromissen!'} />
+        <Productenlijst producten={producten} />
+        <Tussentitel titel={'Heb je vragen of wil je meer informatie?'} />
+        <Tekstblok tekst={'We staan klaar om je te helpen! Neem gerust contact met ons op voor vragen, ' +
+          'offertes of speciale verzoeken. Samen maken we jouw menuaanbod toegankelijker voor iedereen!'} />
         <Link to="/contact">
-          <Button colorScheme="pink" size="lg">
+          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} size="lg">
             Neem contact op
           </Button>
         </Link>

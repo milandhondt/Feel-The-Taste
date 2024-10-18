@@ -23,7 +23,7 @@ const Contact = () => {
     const formPayload = new FormData();
 
     try {
-      formPayload.append('access_key'); //TODO access key in .env zetten
+      formPayload.append('access_key', 'd65b92f9-c4b2-4dce-9571-ef00dbbf2d8c'); //TODO access key in .env zetten
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
       formPayload.append('telefoon', formData.telefoon);
@@ -109,7 +109,13 @@ const Contact = () => {
             placeholder="Uw bericht" fontSize="lg" required />
         </FormControl>
 
-        <Button type="submit" colorScheme="pink" size="lg" width="full" fontSize="lg">
+        <Button type="submit"
+          bg="gray.800"
+          color="white"
+          _hover={{ bg: 'gray.600' }}
+          size="lg"
+          width="full"
+          fontSize="lg">
           Verstuur
         </Button>
       </VStack>

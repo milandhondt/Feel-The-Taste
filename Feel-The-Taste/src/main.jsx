@@ -16,6 +16,8 @@ import SteunOns from './pages/SteunOns/SteunOns';
 import Testimonials from './pages/Testimonials/Testimonials';
 import Sponsors from './pages/Sponsors/Sponsors';
 
+//TODO ACHTERGROND KLEUR OVERAL AANPASSEN
+
 const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -77,5 +79,4 @@ createRoot(document.getElementById('root')).render(
     </ChakraProvider>
   </StrictMode>,
 
-  //TODO Icoontje aanpassen in index.html
 );

@@ -16,7 +16,7 @@ const Sponsors = () => {
         </Text>
         <VStack spacing={2} align="start">
           <Text fontSize="lg">- EarthquaqueGardens </Text>
-          <Text fontSize="lg">- Bedrijf van Lien&apos; s papa</Text>
+          <Text fontSize="lg">- SFSB</Text>
           <Text fontSize="lg">- Milan Dhondt Internationals</Text>
         </VStack>
         <Text fontSize="lg">

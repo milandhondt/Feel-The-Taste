@@ -15,10 +15,10 @@ const Footer = () => {
           <Text fontSize="2xl" fontWeight="bold" mb={2}>
             Contact
           </Text>
-          <Text fontSize={'lg'}>Email: <Link href="mailto:voorbeeldemial@gmail.com"
+          <Text fontSize={'lg'}>Email: <Link href="mailto:info@feelthetaste.be"
             color="white" textDecoration="underline">
-            voorbeeldemial@gmail.com</Link></Text>
-          <Text fontSize={'lg'}>Telefoon: +12 345 678 90</Text>
+            info@feelthetaste.be</Link></Text>
+          <Text fontSize={'lg'}>Telefoon: +32 470 42 55 86</Text>
         </Box>
 
         <Box mt={[4, 4, 0]}>
@@ -29,7 +29,8 @@ const Footer = () => {
             <FaFacebook style={{ marginRight: '4px' }} />
             <Text fontSize={'lg'}>Facebook</Text>
           </Link>
-          <Link href="https://instagram.com" isExternal color="white" display="flex" alignItems="center">
+          <Link href="https://instagram.com/feelthetaste_bp" isExternal color="white"
+            display="flex" alignItems="center">
             <FaInstagram style={{ marginRight: '4px' }} />
             <Text fontSize={'lg'}>Instagram</Text>
           </Link>

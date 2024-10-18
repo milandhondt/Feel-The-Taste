@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     <Box bg="gray.800" color="white" px={4}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
-        <NavLink to="/home">
-          <Text fontSize="2xl" fontWeight="bold">Logo</Text>
+        <NavLink to='/home'>
+          <Text fontSize="4xl" fontWeight="bold">feel the taste</Text>
         </NavLink>
 
         <IconButton
