@@ -1,4 +1,6 @@
 import { Box, FormControl, FormLabel, Input, Textarea, Button, VStack, useToast } from '@chakra-ui/react';
+import Tekstblok from '../../components/Tekstblok';
+import Tussentitel from '../../components/Tussentitel';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -70,7 +72,14 @@ const Contact = () => {
 
   return (
     <Box maxW="600px" mx="auto" p={4}>
-      <VStack spacing={4} as="form" onSubmit={handleSubmit}>
+      <Box textAlign="center" m={4}>
+        <Tussentitel titel={'Neem contact met ons op!'} />
+      </Box>
+      <Tekstblok tekst={'We horen graag van je! Heb je vragen, suggesties of wil je meer weten over onze Braille- ' +
+        'en vergrote menukaarten? Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op. ' +
+        'Samen kunnen we werken aan een toegankelijkere horeca voor iedereen!'} />
+
+      <VStack mt={8} spacing={4} as="form" onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="f59010ef-0750-45aa-9940-f4658453be47" />
 
         <FormControl id="naam" isRequired>
@@ -100,7 +109,7 @@ const Contact = () => {
         <FormControl id="locatie" isRequired>
           <FormLabel fontSize="lg">Bedrijfslocatie/woonplaats</FormLabel>
           <Input type="text" name="locatie" value={formData.locatie} onChange={handleChange}
-            placeholder="Uw bedrijfslocatie of woonplaats (dorp of stad volstaat)" fontSize="lg" required />
+            placeholder="Uw bedrijfslocatie of woonplaats" fontSize="lg" required />
         </FormControl>
 
         <FormControl id="bericht" isRequired>

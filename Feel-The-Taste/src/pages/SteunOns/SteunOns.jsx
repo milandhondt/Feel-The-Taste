@@ -1,31 +1,53 @@
-import { Box, Text, VStack, Link } from '@chakra-ui/react';
+import { Box, VStack, Text, Link, SimpleGrid } from '@chakra-ui/react';
 import Titel from '../../components/Titel';
+import Tussentitel from '../../components/Tussentitel';
+import Tekstblok from '../../components/Tekstblok';
+import FotoComp from '../OverOns/FotoComp';
 
 const SteunOnsProject = () => {
   return (
     <Box bg="white" color="gray.800" minH="100vh" p={4}>
-      <VStack spacing={6} align="start">
+      <VStack spacing={6} align="center"> {/* Align to center */}
         <Titel titel={'Steun ons project'} />
-        <Text fontSize="lg">
-          Bij Feel the Taste zijn we toegewijd aan het verbeteren
-          van de toegankelijkheid in de horeca door middel van
-          braille menukaarten. Om dit te realiseren, hebben we uw
-          steun nodig!
-        </Text>
-        <Text fontSize="lg">
-          We hebben een crowdfundingproject opgezet om de benodigde middelen te verzamelen. U kunt ons helpen door:
-        </Text>
-        <VStack spacing={2} align="start">
-          <Text fontSize="lg">- Bij te dragen aan ons crowdfundingproject.</Text>
-          <Text fontSize="lg">- Ons te volgen op sociale media en onze berichten te delen.</Text>
-          <Text fontSize="lg">- Te praten met vrienden en familie over ons project.</Text>
-        </VStack>
-        <Text fontSize="lg">
-          Voor meer informatie over ons crowdfundingproject, klik op de onderstaande link:
-        </Text>
-        <Link href="https://crowdfundinglink.com" isExternal color="pink.500" fontSize="lg">
+        <Tussentitel titel={'Maakt u samen met ons horeca toegankelijker?'} />
+        <Tekstblok tekst={'Bij feel the taste geloven we in een wereld waarin iedereen toegang heeft tot ' +
+          'een zorgeloze eetervaring, ongeacht visuele beperkingen. Om dit te realiseren, willen we zoveel ' +
+          'mogelijk restaurants voorzien van braille- en vergrote menukaarten.'} />
+        <Tekstblok tekst={'Binnenkort starten we een crowdfundingcampagne om dit belangrijke doel te bereiken, ' +
+          'en we kunnen uw steun goed gebruiken! Door bij te dragen helpt u ons om inclusiviteit in de horeca te ' +
+          'vergroten en meer locaties toegankelijk te maken voor blinde en slechtziende gasten.'} />
+        <Tekstblok tekst={'Samen kunnen we echt een verschil maken! Houd deze pagina in de gaten voor updates en ' +
+          'de lancering van onze campagne.'} />
+        <Link
+          href="https://crowdfundinglink.com"
+          isExternal
+          color="blue.900"
+          fontSize="lg"
+          textDecorationLine={'underline'}
+        >
           Steun ons project hier!
         </Link>
+        <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
+          <Box textAlign="center">
+            <FotoComp src={'/oo1.jpg'} alt={'Foto van Victor'} height="200px" width="200px" />
+            <Text>Victor Vanden Broucke</Text>
+          </Box>
+          <Box textAlign="center">
+            <FotoComp src={'/oo2.jpg'} alt={'Foto van Maxime'} height="200px" width="200px" />
+            <Text>Maxime Debruyne</Text>
+          </Box>
+          <Box textAlign="center">
+            <FotoComp src={'/oo3.jpg'} alt={'Foto van Jarno'} height="200px" width="200px" />
+            <Text>Jarno Van Quaquebeke</Text>
+          </Box>
+          <Box textAlign="center">
+            <FotoComp src={'/oo4.jpg'} alt={'Foto van Matisse'} height="200px" width="200px" />
+            <Text>Matisse Goudeseune</Text>
+          </Box>
+        </SimpleGrid>
+        <Text fontWeight={'bold'}>
+          Alvast bedankt voor uw steun!
+        </Text>
       </VStack>
     </Box>
   );

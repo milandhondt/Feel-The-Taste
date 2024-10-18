@@ -23,7 +23,7 @@ const Home = () => {
         <Tussentitel titel={'Toegankelijke menukaarten voor iedereen'} />
         <Tekstblok tekst={'Bij feel the taste zorgen we voor inclusie met braille en vergrote menukaarten. ' +
           'Geef al je gasten een zorgeloze en comfortabele eetervaring, zonder compromissen!'} />
-        <Productenlijst producten={producten} />
+        <Productenlijst producten={producten} heeftKnop={true} />
         <Tussentitel titel={'Heb je vragen of wil je meer informatie?'} />
         <Tekstblok tekst={'We staan klaar om je te helpen! Neem gerust contact met ons op voor vragen, ' +
           'offertes of speciale verzoeken. Samen maken we jouw menuaanbod toegankelijker voor iedereen!'} />
