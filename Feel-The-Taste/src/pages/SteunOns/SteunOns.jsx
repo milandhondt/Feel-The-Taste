@@ -2,12 +2,12 @@ import { Box, VStack, Text, Link, SimpleGrid } from '@chakra-ui/react';
 import Titel from '../../components/Titel';
 import Tussentitel from '../../components/Tussentitel';
 import Tekstblok from '../../components/Tekstblok';
-import FotoComp from '../OverOns/FotoComp';
+import FotoComp from '../../components/FotoComp';
 
 const SteunOnsProject = () => {
   return (
-    <Box bg="white" color="gray.800" minH="100vh" p={4}>
-      <VStack spacing={6} align="center"> {/* Align to center */}
+    <Box minH="100vh" p={4}>
+      <VStack spacing={6} align="center">
         <Titel titel={'Steun ons project'} />
         <Tussentitel titel={'Maakt u samen met ons horeca toegankelijker?'} />
         <Tekstblok tekst={'Bij feel the taste geloven we in een wereld waarin iedereen toegang heeft tot ' +
@@ -45,7 +45,7 @@ const SteunOnsProject = () => {
             <Text>Matisse Goudeseune</Text>
           </Box>
         </SimpleGrid>
-        <Text fontWeight={'bold'}>
+        <Text fontWeight={'bold'} fontSize={'2xl'}>
           Alvast bedankt voor uw steun!
         </Text>
       </VStack>

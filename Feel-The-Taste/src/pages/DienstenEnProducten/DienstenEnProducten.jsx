@@ -7,9 +7,9 @@ import Tussentitel from '../../components/Tussentitel';
 
 const DienstenEnProducten = () => {
   return (
-    <Box bg="white" color="gray.800" minH="100vh" p={4}>
-      <Center> {/* Centering the content horizontally */}
-        <VStack spacing={6} align="center"> {/* Centering items in VStack */}
+    <Box minH="100vh" p={4}>
+      <Center>
+        <VStack spacing={6} align="center">
           <Titel titel={'Diensten & Producten'} />
           <Tussentitel titel={'Onze dienst'} />
           <Tekstblok tekst={'Bij Feel the Taste verbeteren we de toegankelijkheid van horecazaken voor blinden, ' +

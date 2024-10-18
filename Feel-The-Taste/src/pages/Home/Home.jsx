@@ -8,7 +8,7 @@ import { producten } from '../../api/producten';
 
 const Home = () => {
   return (
-    <Box bg="#FFFDE7" color="gray.800"
+    <Box
       minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4}>
       <Link>
       </Link>

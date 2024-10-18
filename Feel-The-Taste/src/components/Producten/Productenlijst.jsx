@@ -1,7 +1,8 @@
 import { Box, VStack, Text } from '@chakra-ui/react';
 import Product from './Product';
+import Tussentitel from '../Tussentitel';
 
-const Productenlijst = ({ producten = [], heeftKnop }) => { // Default waarde voor producten
+const Productenlijst = ({ producten = [], heeftKnop }) => {
   if (!producten.length) {
     return (
       <Box textAlign="center" p={4}>
@@ -15,13 +16,11 @@ const Productenlijst = ({ producten = [], heeftKnop }) => { // Default waarde vo
 
   return (
     <Box textAlign="center" p={4}>
-      <Text fontSize="2xl" fontWeight="bold" mb={4}>
-        Onze Diensten
-      </Text>
-      <VStack spacing={4} align="center">
+      <Tussentitel titel={'Onze producten'} />
+      <VStack mt={5} spacing={4} align="center">
         {
           producten.map((p) => (
-            <Box key={p.id} w="full"> {/* Ensure each product takes full width */}
+            <Box key={p.id} w="full">
               <Product
                 foto={p.foto}
                 naam={p.naam}

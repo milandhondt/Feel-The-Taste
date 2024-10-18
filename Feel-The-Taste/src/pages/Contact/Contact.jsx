@@ -78,44 +78,43 @@ const Contact = () => {
       <Tekstblok tekst={'We horen graag van je! Heb je vragen, suggesties of wil je meer weten over onze Braille- ' +
         'en vergrote menukaarten? Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op. ' +
         'Samen kunnen we werken aan een toegankelijkere horeca voor iedereen!'} />
-
       <VStack mt={8} spacing={4} as="form" onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="f59010ef-0750-45aa-9940-f4658453be47" />
 
         <FormControl id="naam" isRequired>
           <FormLabel fontSize="lg">Naam</FormLabel>
           <Input type="text" name="name" value={formData.name} onChange={handleChange}
-            placeholder="Uw naam" fontSize="lg" required />
+            placeholder="Uw naam" fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id="email" isRequired>
           <FormLabel fontSize="lg">Email</FormLabel>
           <Input type="email" name="email" value={formData.email} onChange={handleChange}
-            placeholder="Uw emailadres" fontSize="lg" required />
+            placeholder="Uw emailadres" fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id='telefoonnr'>
           <FormLabel fontSize="lg">Telefoonnummer</FormLabel>
           <Input type="tel" name="telefoon" value={formData.telefoon} onChange={handleChange}
-            placeholder="Uw telefoonnummer" fontSize="lg" />
+            placeholder="Uw telefoonnummer" fontSize="lg" bg="white" />
         </FormControl>
 
         <FormControl id="bedrijfsnaam">
           <FormLabel fontSize="lg">Bedrijfsnaam</FormLabel>
           <Input type="text" name="bedrijfsnaam" value={formData.bedrijfsnaam} onChange={handleChange}
-            placeholder="Uw bedrijfsnaam" fontSize="lg" />
+            placeholder="Uw bedrijfsnaam" fontSize="lg" bg="white" />
         </FormControl>
 
         <FormControl id="locatie" isRequired>
           <FormLabel fontSize="lg">Bedrijfslocatie/woonplaats</FormLabel>
           <Input type="text" name="locatie" value={formData.locatie} onChange={handleChange}
-            placeholder="Uw bedrijfslocatie of woonplaats" fontSize="lg" required />
+            placeholder="Uw bedrijfslocatie of woonplaats" fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id="bericht" isRequired>
           <FormLabel fontSize="lg">Bericht</FormLabel>
           <Textarea name="message" value={formData.message} onChange={handleChange}
-            placeholder="Uw bericht" fontSize="lg" required />
+            placeholder="Uw bericht" fontSize="lg" bg="white" required />
         </FormControl>
 
         <Button type="submit"

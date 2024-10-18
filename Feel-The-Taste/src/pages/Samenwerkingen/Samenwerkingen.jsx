@@ -8,7 +8,7 @@ import { samenwerkingen } from '../../api/samenwerkingen';
 
 const Samenwerkingen = () => {
   return (
-    <Box bg="white" color="gray.800" minH="100vh" p={{ base: 4, md: 6 }} maxW="1200px" mx="auto">
+    <Box minH="100vh" p={{ base: 4, md: 6 }} maxW="1200px" mx="auto">
       <VStack spacing={6} align="center">
         <Titel titel={'Welkom bij onze Samenwerkingspagina!'} />
         <Tekstblok tekst={'Bij feel the taste zijn we gepassioneerd over het bevorderen van inclusiviteit en ' +

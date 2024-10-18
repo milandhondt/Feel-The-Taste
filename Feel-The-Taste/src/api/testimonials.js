@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    id: 1,
+    naam: 'Victor Vanden Broucke',
+    inhoud: 'De inclusiviteit die Feel the Taste biedt, is een echte game changer '+
+    'voor blinden en slechtzienden in de horeca. Ik ben dankbaar voor hun inzet!',
+    score: 5,
+    bedrijfsnaam: 'Restaurant De Molen',
+  },
+  {
+    id: 2,
+    naam: 'Maxime Debruyne',
+    inhoud: 'Dankzij Feel the Taste kunnen we nu onze menukaarten in braille aanbieden. '+
+    'Dit maakt een wereld van verschil voor onze gasten!',
+    score: 4,
+    bedrijfsnaam: 'Café Het Paviljoen',
+  },
+  {
+    id: 3,
+    naam: 'Jarno Van Quaquebeke',
+    inhoud: 'De samenwerking met Feel the Taste was uiterst professioneel en ze hebben ons '+
+    'geholpen om onze zaak toegankelijker te maken.',
+    score: 5,
+    bedrijfsnaam: 'Brasserie De Zilverberg',
+  },
+  {
+    id: 4,
+    naam: 'Matisse Goudeseune',
+    inhoud: 'Het is geweldig om te zien hoe Feel the Taste de horeca toegankelijker maakt voor '+
+    'iedereen. Hun inzet is bewonderenswaardig!',
+    score: 4,
+    bedrijfsnaam: 'Pizzeria La Dolce Vita',
+  },
+  {
+    id: 5,
+    naam: 'Emma Verhaegen',
+    inhoud: 'Als blinde gast voel ik me nu veel meer welkom in restaurants die met Feel the Taste '+
+    'werken. Hun menukaarten zijn geweldig!',
+    score: 5,
+    bedrijfsnaam: 'Bistro De Genieter',
+  },
+];

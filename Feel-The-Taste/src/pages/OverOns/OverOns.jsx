@@ -2,11 +2,11 @@ import { Box, VStack, Text, SimpleGrid } from '@chakra-ui/react';
 import Titel from '../../components/Titel';
 import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
-import FotoComp from './FotoComp';
+import FotoComp from '../../components/FotoComp';
 
 const OverOns = () => {
   return (
-    <Box bg="white" color="gray.800" minH="100vh" p={4}>
+    <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
         <Titel titel={'Over Ons'} />
         <Tekstblok

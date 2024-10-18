@@ -3,10 +3,10 @@ import Samenwerking from './Samenwerking';
 
 const SamenwerkingLijst = ({ samenwerkingen }) => {
   return (
-    <SimpleGrid 
-      columns={{ base: 1, md: 2 }} // 1 kolom op kleine schermen, 2 op middelgrote en grotere schermen
+    <SimpleGrid
+      columns={{ base: 1, md: 2, lg: 3 }}
       spacing={10}
-      mt={4} // Voeg wat boven marge toe
+      mt={4}
     >
       {samenwerkingen.map((samenwerking, index) => (
         <Samenwerking key={index} {...samenwerking} />
