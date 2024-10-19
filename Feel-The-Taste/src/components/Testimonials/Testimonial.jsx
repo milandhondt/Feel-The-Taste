@@ -12,6 +12,8 @@ const Testimonial = ({ naam, inhoud, score, bedrijfsnaam }) => {
       color="gray.800"
       minHeight="250px"
       position="relative"
+      maxW="400px"
+      mb={9}
     >
       <Text fontWeight="bold" fontSize="lg" mb={2}>
         {bedrijfsnaam}

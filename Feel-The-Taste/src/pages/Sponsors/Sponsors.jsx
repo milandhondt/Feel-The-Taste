@@ -40,7 +40,7 @@ const Sponsors = () => {
             <Text>Matisse Goudeseune</Text>
           </Box>
         </SimpleGrid>
-        <Text fontWeight={'bold'} fontSize="2xl">
+        <Text fontWeight={'bold'} fontSize="2xl" textAlign={'center'}>
           Alvast bedankt voor uw steun!
         </Text>
       </VStack>

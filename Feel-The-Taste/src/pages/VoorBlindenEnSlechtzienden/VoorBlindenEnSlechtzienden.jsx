@@ -23,13 +23,13 @@ const VoorBlindenEnSlechtzienden = () => {
 
         <Tussentitel titel={'Onze voordelen voor u'} />
         <VStack spacing={4} align="center" px={{ base: 4, md: 10 }}>
-          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="center">
+          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="left">
             • Zelfstandigheid: U kunt de menukaart zelfstandig lezen, zonder hulp nodig te hebben van iemand anders.
           </Text>
-          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="center">
+          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="left">
             • Comfort: U kunt op uw gemak door het menu bladeren, net zoals alle andere gasten.
           </Text>
-          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="center">
+          <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="left">
             • Inclusiviteit: Onze missie is om elke horecazaak toegankelijk te maken voor
             mensen met een visuele beperking, zodat iedereen zich welkom voelt.
           </Text>

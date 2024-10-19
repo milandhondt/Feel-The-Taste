@@ -1,6 +1,5 @@
-import { Box, VStack, Text, Link } from '@chakra-ui/react';
+import { Box, Heading, VStack, Text, Link } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import Titel from '../../components/Titel';
 import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
 import SamenwerkingLijst from '../../components/Samenwerkingen/SamenwerkingLijst';
@@ -10,7 +9,9 @@ const Samenwerkingen = () => {
   return (
     <Box minH="100vh" p={{ base: 4, md: 6 }} maxW="1200px" mx="auto">
       <VStack spacing={6} align="center">
-        <Titel titel={'Welkom bij onze Samenwerkingspagina!'} />
+        <Heading as="h1" size={{ base: 'lg', md: '2xl' }} mb={4} mt={5} textAlign="center">
+          Welkom bij onze Samenwerkingspagina!
+        </Heading>
         <Tekstblok tekst={'Bij feel the taste zijn we gepassioneerd over het bevorderen van inclusiviteit en ' +
           'toegankelijkheid in de horeca. We geloven dat iedereen, ongeacht visuele beperkingen, het recht heeft ' +
           'om te genieten van een geweldige eetervaring. Daarom nodigen we bedrijven uit om met ons samen te werken ' +

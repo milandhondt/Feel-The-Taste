@@ -6,9 +6,9 @@ import { testimonials } from '../../api/testimonials';
 const Testimonials = () => {
   return (
     <Box minH="100vh" p={4}>
-      <VStack spacing={6} align="start">
+      <VStack spacing={6} align="center">
         <Titel titel={'Testimonials'} />
-        <Text fontSize="lg">
+        <Text fontSize="lg" align={'center'} ml={10} mr={10}>
           We waarderen de feedback van onze eindgebruikers, alsook onze partners.
           Hier zijn enkele getuigenissen van blinden, slechtzienden en partners die onze braille
           of vergrote menukaarten hebben gebruikt:
@@ -16,7 +16,7 @@ const Testimonials = () => {
 
         <TestimonialLijst testimonials={testimonials} />
 
-        <Text fontSize="lg">
+        <Text fontSize="lg" textAlign={'center'}>
           Wilt u ook uw ervaring delen? Neem contact met ons op!
         </Text>
       </VStack>

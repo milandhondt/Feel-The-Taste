@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
   const beschrijvingLijnen = beschrijving.split('\n').map((line, index) => (
     line.includes('•') ? (
-      <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800">
+      <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800" textAlign="left">
         {line.trim()}
       </ListItem>
     ) : (
@@ -33,7 +33,7 @@ const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
         <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="bold" color="gray.800" textAlign="left">
           {naam}
         </Text>
-        <List spacing={1}>
+        <List spacing={1} textAlign="left">
           {beschrijvingLijnen}
         </List>
         {heeftKnop && (
