@@ -8,9 +8,9 @@ const SteunOnsProject = () => {
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Steun ons project'} />
+        <Titel titel={'Steun het project'} />
         <Tussentitel titel={'Maakt u samen met ons horeca toegankelijker?'} />
-        <Tekstblok tekst={'Bij feel the taste geloven we in een wereld waarin iedereen toegang heeft tot ' +
+        <Tekstblok tekst={'Bij Feel The Taste geloven we in een wereld waarin iedereen toegang heeft tot ' +
           'een zorgeloze eetervaring, ongeacht visuele beperkingen. Om dit te realiseren, willen we zoveel ' +
           'mogelijk restaurants voorzien van braille- en vergrote menukaarten.'} />
         <Tekstblok tekst={'Binnenkort starten we een crowdfundingcampagne om dit belangrijke doel te bereiken, ' +
@@ -25,7 +25,7 @@ const SteunOnsProject = () => {
           fontSize="lg"
           textDecorationLine={'underline'}
         >
-          Steun ons project hier!
+          Steun het project hier!
         </Link>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
           <Box textAlign="center">

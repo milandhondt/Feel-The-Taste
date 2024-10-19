@@ -11,7 +11,7 @@ const Sponsors = () => {
       <VStack spacing={6} align="center">
         <Titel titel={'Sponsors'} />
         <Tussentitel titel={'Steun inclusiviteit in de horeca!'} />
-        <Tekstblok tekst={'Bij feel the taste streven we naar een inclusieve eetervaring voor iedereen. ' +
+        <Tekstblok tekst={'Bij Feel The Taste streven we naar een inclusieve eetervaring voor iedereen. ' +
           'Door samen te werken met sponsoren kunnen we onze missie om braille en vergrote menukaarten ' +
           'breder beschikbaar te maken sneller realiseren. Met uw steun kunnen we meer restaurants toegankelijk ' +
           'maken voor blinde en slechtziende gasten.'} />

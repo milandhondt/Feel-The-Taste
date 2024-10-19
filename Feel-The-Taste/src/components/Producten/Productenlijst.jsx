@@ -16,7 +16,7 @@ const Productenlijst = ({ producten = [], heeftKnop }) => {
 
   return (
     <Box textAlign="center" p={4}>
-      <Tussentitel titel={'Onze producten'} />
+      <Tussentitel titel={'Producten'} />
       <VStack mt={5} spacing={4} align="center">
         {
           producten.map((p) => (

@@ -8,11 +8,11 @@ const OverOns = () => {
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Over Ons'} />
+        <Titel titel={'Over ons'} />
         <Tekstblok
           tekst={'Wij zijn Victor, Maxime, Jarno en Matisse ' +
             'vier enthousiaste studenten van de Arteveldehogeschool. ' +
-            'Voor onze bachelorproef hebben we de feitelijke vereniging feel the taste opgericht. ' +
+            'Voor onze bachelorproef hebben we de feitelijke vereniging Feel The Taste opgericht. ' +
             'Onze missie is helder: we willen de toegankelijkheid van horecazaken verbeteren voor blinden, ' +
             'slechtzienden en mensen met visuele beperkingen.'}
         />
@@ -44,12 +44,12 @@ const OverOns = () => {
         />
         <Tussentitel titel={'Onze waarden'} />
         <Tekstblok
-          tekst={'Bij feel the taste staan inclusiviteit, toegankelijkheid en kwaliteit centraal. ' +
+          tekst={'Bij Feel The Taste staan inclusiviteit, toegankelijkheid en kwaliteit centraal. ' +
             'Wij geloven dat iedereen het recht heeft om met vrienden en familie te genieten ' +
             'van een restaurantbezoek. ' +
             'Door onze producten te ontwikkelen, dragen we bij aan een gastvrije en inclusieve horecawereld.'}
         />
-        <Tussentitel titel={'Samenwerking en Toekomst'} />
+        <Tussentitel titel={'Samenwerking en toekomst'} />
         <Tekstblok
           tekst={'We werken samen met horecazaken die onze visie delen en ons ondersteunen in onze missie. ' +
             'We zijn vastbesloten om meer bewustzijn te creëren over toegankelijkheid in de horeca ' +

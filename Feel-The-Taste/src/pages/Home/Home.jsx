@@ -13,7 +13,7 @@ const Home = () => {
       <Link>
       </Link>
       <VStack spacing={6}>
-        <Titel titel={'Welkom bij feel the taste!'} />
+        <Titel titel={'Welkom bij Feel The Taste!'} />
         <Image
           src="/logotje.png"
           alt="Logo van feel the taste"
@@ -21,7 +21,7 @@ const Home = () => {
           objectFit="cover"
         />
         <Tussentitel titel={'Toegankelijke menukaarten voor iedereen'} />
-        <Tekstblok tekst={'Bij feel the taste zorgen we voor inclusie met braille en vergrote menukaarten. ' +
+        <Tekstblok tekst={'Bij Feel The Taste zorgen we voor inclusie met braille en vergrote menukaarten. ' +
           'Geef al je gasten een zorgeloze en comfortabele eetervaring, zonder compromissen!'} />
         <Productenlijst producten={producten} heeftKnop={true} />
         <Tussentitel titel={'Heb je vragen of wil je meer informatie?'} />

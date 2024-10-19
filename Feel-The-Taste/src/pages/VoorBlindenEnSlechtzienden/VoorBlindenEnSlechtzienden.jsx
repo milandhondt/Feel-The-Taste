@@ -8,8 +8,8 @@ const VoorBlindenEnSlechtzienden = () => {
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Wat kan feel the taste voor u betekenen?'} />
-        <Tekstblok tekst={'Bij feel the taste geloven we dat iedereen recht heeft ' +
+        <Titel titel={'Wat kan Feel The Taste voor u betekenen?'} />
+        <Tekstblok tekst={'Bij Feel The Taste geloven we dat iedereen recht heeft ' +
           'op een zorgeloze eetervaring, ook wanneer u blind of slechtziend bent. ' +
           'Daarom hebben we ons toegewijd aan het verbeteren van de toegankelijkheid ' +
           'in restaurants door het aanbieden van braille- en vergrote menukaarten.'} />
@@ -21,7 +21,7 @@ const VoorBlindenEnSlechtzienden = () => {
           'groot letterformaat, zodat u volledig zelf uw keuzes kunt maken. Dit betekent ' +
           'meer vrijheid en comfort tijdens uw restaurantbezoek!'} />
 
-        <Tussentitel titel={'Onze voordelen voor u'} />
+        <Tussentitel titel={'Voordelen voor u'} />
         <VStack spacing={4} align="flex-start" px={{ base: 4, md: 10 }} ml={40} mr={40}>
           <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="left">
             • Zelfstandigheid: U kunt de menukaart zelfstandig lezen, zonder hulp nodig te hebben van iemand anders.
@@ -35,7 +35,7 @@ const VoorBlindenEnSlechtzienden = () => {
           </Text>
         </VStack>
 
-        <Tussentitel titel={'Waar kunt u onze menukaarten vinden?'}/>
+        <Tussentitel titel={'Waar kunt u de menukaarten vinden?'}/>
         <Text textAlign="center" ml={100} mr={100}>
           Wij werken samen met verschillende restaurants en cafés die toegankelijk willen zijn voor
           gasten met een visuele beperking.<br />
@@ -45,9 +45,9 @@ const VoorBlindenEnSlechtzienden = () => {
           braille- en vergrote menukaarten.
         </Text>
 
-        <Tussentitel titel={'Hoe u ons kunt helpen'} />
+        <Tussentitel titel={'Hoe u kunt helpen'} />
         <Tekstblok tekst={'Kent u een restaurant dat nog geen braille- of vergrote menukaarten aanbiedt? ' +
-          'Laat hen weten over feel the taste! Samen kunnen we ervoor zorgen dat steeds meer horecazaken ' +
+          'Laat hen weten over Feel The Taste! Samen kunnen we ervoor zorgen dat steeds meer horecazaken ' +
           'toegankelijk worden voor blinde en slechtziende gasten.'} />
 
         <Tussentitel titel={'Heeft u vragen of suggesties?'} />

@@ -13,7 +13,7 @@ export const producten = [
     id: 2,
     foto: '/product2.jpg',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
-    naam: 'Vergrote Menukaarten voor Slechtzienden',
+    naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: 'Zorg voor toegankelijkheid met onze vergrote menukaarten. Duidelijk leesbaar, ' + 
     'stijlvol en volledig personaliseerbaar. Een eenvoudige manier om alle gasten een zorgeloze ervaring te bieden!',
   },
@@ -42,7 +42,7 @@ samenleving. Laat iedereen mee genieten van jouw culinaire aanbod, zonder barri√
     id: 2,
     foto: '/product2.jpg',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
-    naam: 'Vergrote Menukaarten voor Slechtzienden',
+    naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: `Maak je menuaanbod toegankelijker voor slechtzienden met onze vergrote menukaarten. 
 Deze kaarten zijn speciaal ontworpen voor klanten met een verminderd zicht, zodat zij zonder moeite 
 je gerechten en drankjes kunnen lezen en kiezen. Onze vergrote menukaarten bieden:
