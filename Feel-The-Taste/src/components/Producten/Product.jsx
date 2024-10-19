@@ -1,10 +1,10 @@
-import { HStack, Image, Text, Link, Button, VStack, List, ListItem, useBreakpointValue } from '@chakra-ui/react';
+import { HStack, Image, Text, Button, VStack, List, ListItem, useBreakpointValue } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
-  // Split de beschrijving in een lijst op basis van bullet points
   const beschrijvingLijnen = beschrijving.split('\n').map((line, index) => (
     line.includes('•') ? (
-      <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800"> {/* Added margin-bottom for spacing */}
+      <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800">
         {line.trim()}
       </ListItem>
     ) : (
@@ -14,7 +14,6 @@ const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
     )
   ));
 
-  // Responsive settings for spacing
   const stackSpacing = useBreakpointValue({ base: 4, md: 8 });
   const imageHeight = useBreakpointValue({ base: '150px', md: '200px' });
   const imageWidth = useBreakpointValue({ base: '150px', md: '200px' });
@@ -28,17 +27,15 @@ const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
       borderRadius="md"
       boxShadow="md"
       w="full"
-      flexDirection={{ base: 'column', md: 'row' }} // Change to column on small screens
+      flexDirection={{ base: 'column', md: 'row' }}
     >
       <VStack align="left" spacing={4} flex={1}>
         <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="bold" color="gray.800" textAlign="left">
           {naam}
         </Text>
-        {/* Maak een lijst van bullet points en andere tekst */}
         <List spacing={1}>
           {beschrijvingLijnen}
         </List>
-        {/* Conditionally render the button only if heeftKnop is true */}
         {heeftKnop && (
           <Link to="/diensten-en-producten">
             <Button

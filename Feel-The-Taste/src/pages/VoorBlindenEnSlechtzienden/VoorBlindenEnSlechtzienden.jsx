@@ -36,11 +36,11 @@ const VoorBlindenEnSlechtzienden = () => {
         </VStack>
 
         <Tussentitel titel={'Waar kunt u onze menukaarten vinden?'} />
-        <Text textAlign="center"> {/* Centreren van de tekst */}
+        <Text textAlign="center">
           Wij werken samen met verschillende restaurants en cafés die toegankelijk willen zijn voor
           gasten met een visuele beperking.<br />
           Op onze website vindt u&nbsp;
-          <Link to="/samenwerkingen" style={{ textDecoration: 'underline', color: '#2c5282' }}>hier</Link>. een
+          <Link to="/samenwerkingen" style={{ textDecoration: 'underline', color: '#2c5282' }}>hier</Link> een
           overzicht van alle horecazaken die gebruik maken van onze
           braille- en vergrote menukaarten.
         </Text>

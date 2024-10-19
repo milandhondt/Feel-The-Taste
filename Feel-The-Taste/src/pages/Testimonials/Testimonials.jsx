@@ -14,9 +14,7 @@ const Testimonials = () => {
           of vergrote menukaarten hebben gebruikt:
         </Text>
 
-        <VStack spacing={4} align="start">
-          <TestimonialLijst testimonials={testimonials} />
-        </VStack>
+        <TestimonialLijst testimonials={testimonials} />
 
         <Text fontSize="lg">
           Wilt u ook uw ervaring delen? Neem contact met ons op!
