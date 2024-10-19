@@ -75,7 +75,7 @@ const Contact = () => {
       <Box textAlign="center" m={4}>
         <Tussentitel titel={'Neem contact met ons op!'} />
       </Box>
-      <Tekstblok tekst={'We horen graag van je! Heb je vragen, suggesties of wil je meer weten over onze Braille- ' +
+      <Tekstblok tekst={'We horen graag van je! Heb je vragen, suggesties of wil je meer weten over onze braille- ' +
         'en vergrote menukaarten? Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op. ' +
         'Samen kunnen we werken aan een toegankelijkere horeca voor iedereen!'} />
       <VStack mt={8} spacing={4} as="form" onSubmit={handleSubmit}>

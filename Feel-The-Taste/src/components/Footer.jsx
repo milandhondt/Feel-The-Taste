@@ -56,7 +56,7 @@ const Footer = () => {
       />
 
       <Text textAlign="center" fontSize="md" borderTop="1px solid white" pt={4}>
-        © {jaar} Feel the Taste. Alle rechten voorbehouden.
+        © {jaar} feel the taste. Alle rechten voorbehouden.
       </Text>
     </Box>
   );

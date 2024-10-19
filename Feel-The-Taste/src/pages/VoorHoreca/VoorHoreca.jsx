@@ -11,7 +11,7 @@ const VoorHoreca = () => {
 
         <Tussentitel titel={'Introductie'} />
         <Text textAlign="center">
-          Bij Feel the Taste zetten we ons in voor een inclusieve eetervaring voor iedereen. Wij geloven dat
+          Bij feel the taste zetten we ons in voor een inclusieve eetervaring voor iedereen. Wij geloven dat
           blinde en slechtziende gasten dezelfde rechten hebben om te genieten van een zorgeloos restaurantbezoek
           als ieder ander. Door middel van onze speciaal ontworpen
           braille- en vergrote menukaarten maken we deze ervaring mogelijk en helpen
@@ -35,7 +35,7 @@ const VoorHoreca = () => {
 
         <Tussentitel titel={'Oplossingen'} />
         <Text textAlign="center">
-          Bij Feel the Taste bieden we hoogwaardige braille- en vergrote
+          Bij feel the taste bieden we hoogwaardige braille- en vergrote
           menukaarten die speciaal zijn ontworpen om
           aan de behoeften van blinde en slechtziende gasten te voldoen.
         </Text>
@@ -50,7 +50,7 @@ const VoorHoreca = () => {
 
         <Tussentitel titel={'Hoe het werkt'} />
         <Text textAlign="center">
-          Het proces om samen te werken met Feel the Taste is eenvoudig:
+          Het proces om samen te werken met feel the taste is eenvoudig:
         </Text>
 
         <VStack spacing={4} align="left" px={{ base: 4, md: 10 }}>
@@ -100,7 +100,7 @@ const VoorHoreca = () => {
           Wij nemen na uw verzoek zo snel mogelijk contact met u op.
         </Text>
 
-        <Text textAlign="center">
+        <Text textAlign="center" fontWeight={'bold'}>
           Samen kunnen we een verschil maken in de toegankelijkheid van de horeca!
         </Text>
       </VStack>

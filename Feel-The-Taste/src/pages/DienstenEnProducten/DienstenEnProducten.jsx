@@ -12,7 +12,7 @@ const DienstenEnProducten = () => {
         <VStack spacing={6} align="center">
           <Titel titel={'Diensten & Producten'} />
           <Tussentitel titel={'Onze dienst'} />
-          <Tekstblok tekst={'Bij Feel the Taste verbeteren we de toegankelijkheid van horecazaken voor blinden, ' +
+          <Tekstblok tekst={'Bij feel the taste verbeteren we de toegankelijkheid van horecazaken voor blinden, ' +
             'slechtzienden en mensen met visuele beperkingen. We helpen restaurants en cafés om hun menuaanbod ' +
             'toegankelijker te maken, zodat al hun gasten zelfstandig keuzes kunnen maken.'} />
           <Tekstblok tekst={'Onze focus ligt niet alleen op het aanbieden van producten, ' +

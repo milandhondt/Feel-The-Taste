@@ -12,7 +12,7 @@ const OverOns = () => {
         <Tekstblok
           tekst={'Wij zijn Victor, Maxime, Jarno en Matisse ' +
             'vier enthousiaste studenten van de Arteveldehogeschool. ' +
-            'Voor onze bachelorproef hebben we de feitelijke vereniging Feel the Taste opgericht. ' +
+            'Voor onze bachelorproef hebben we de feitelijke vereniging feel the taste opgericht. ' +
             'Onze missie is helder: we willen de toegankelijkheid van horecazaken verbeteren voor blinden, ' +
             'slechtzienden en mensen met visuele beperkingen.'}
         />
@@ -39,12 +39,12 @@ const OverOns = () => {
           tekst={'Tijdens onze studie kwamen we erachter dat veel horecazaken ' +
             'nog niet voldoende rekening houden met de behoeften van gasten met visuele beperkingen. ' +
             'Dit inspireerde ons om actie te ondernemen en een oplossing te bieden die de ervaring van ' +
-            'deze klanten verbetert. Met onze Braille- en vergrote menukaarten zorgen we ervoor dat iedereen ' +
+            'deze klanten verbetert. Met onze braille- en vergrote menukaarten zorgen we ervoor dat iedereen ' +
             'kan genieten van een heerlijke maaltijd zonder barrières.'}
         />
         <Tussentitel titel={'Onze waarden'} />
         <Tekstblok
-          tekst={'Bij Feel the Taste staan inclusiviteit, toegankelijkheid en kwaliteit centraal. ' +
+          tekst={'Bij feel the taste staan inclusiviteit, toegankelijkheid en kwaliteit centraal. ' +
             'Wij geloven dat iedereen het recht heeft om met vrienden en familie te genieten ' +
             'van een restaurantbezoek. ' +
             'Door onze producten te ontwikkelen, dragen we bij aan een gastvrije en inclusieve horecawereld.'}

@@ -4,7 +4,7 @@ export const producten = [
     foto: '/product1.jpg',
     alt: 'Afbeelding van inclusieve braille menukaarten',
     naam: 'Inclusieve braille menukaarten',
-    beschrijving: 'Maak je restaurant toegankelijker met onze stijlvolle en duurzame Braille menukaarten. '+ 
+    beschrijving: 'Maak je restaurant toegankelijker met onze stijlvolle en duurzame braille menukaarten. '+ 
     'Speciaal ontworpen voor blinde en slechtziende klanten, met aanpasbare ' + 
     'opties die passen bij jouw menuaanbod en huisstijl. '+
     'Toegankelijkheid begint hier!',
