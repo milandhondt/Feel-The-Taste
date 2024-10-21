@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Testimonials = () => {
   return (
     <Box minH="100vh" p={4}>
-      <VStack spacing={6} align="center" ml={40} mr={40}>
+      <VStack spacing={6} align="center" ml={30} mr={30}>
         <Titel titel={'Testimonials'} />
         <Text fontSize="lg" align={'center'} ml={10} mr={10}>
           We waarderen de feedback van onze eindgebruikers, alsook onze partners.
