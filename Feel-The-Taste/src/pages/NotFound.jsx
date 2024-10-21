@@ -20,8 +20,8 @@ const NotFound = () => {
         Oeps! Het lijkt erop dat je op een pagina bent beland die niet bestaat.
       </Text>
       <Link to="/">
-        <Button colorScheme="pink" size='lg'>
-          Terug naar de homepage
+        <Button bg="gray.800" color='#FFFDE7' _hover={{ bg: 'gray.600' }} size="lg">
+          Terug naar de homepagina
         </Button>
       </Link>
     </Box >
