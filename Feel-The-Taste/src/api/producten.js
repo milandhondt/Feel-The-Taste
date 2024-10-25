@@ -12,8 +12,8 @@ export const producten = [
   },
   {
     id: 2,
-    foto1: '/product2.jpg',
-    foto2: '/product2.jpg',
+    foto1: '/p2a.png',
+    foto2: '/p2b.png',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
     naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: 'Zorg voor toegankelijkheid met onze vergrote menukaarten. Duidelijk leesbaar, ' + 
@@ -43,8 +43,8 @@ samenleving. Laat iedereen mee genieten van jouw culinaire aanbod, zonder barri√
   },
   {
     id: 2,
-    foto1: '/product2.jpg',
-    foto2: '/product2.jpg',
+    foto1: '/p2a.png',
+    foto2: '/p2b.png',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
     naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: `Maak je menuaanbod toegankelijker voor slechtzienden met onze vergrote menukaarten. 
