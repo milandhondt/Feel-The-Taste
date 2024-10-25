@@ -22,7 +22,8 @@ const Productenlijst = ({ producten = [], heeftKnop }) => {
           producten.map((p) => (
             <Box key={p.id} w="full">
               <Product
-                foto={p.foto}
+                foto1={p.foto1}
+                foto2={p.foto2}
                 naam={p.naam}
                 beschrijving={p.beschrijving}
                 heeftKnop={heeftKnop}

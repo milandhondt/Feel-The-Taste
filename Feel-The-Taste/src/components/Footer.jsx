@@ -13,7 +13,7 @@ const Footer = () => {
       >
         <Flex alignItems="normal" direction={['column', 'column', 'row']}>
           <Image
-            src="/logoborder.png"
+            src="/logozwart.jpg"
             alt="Feel the Taste Logo"
             boxSize="125px"
             mr={4}

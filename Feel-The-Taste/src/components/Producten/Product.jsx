@@ -1,7 +1,7 @@
 import { HStack, Image, Text, Button, VStack, List, ListItem, useBreakpointValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
-const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
+const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
   const beschrijvingLijnen = beschrijving.split('\n').map((line, index) => (
     line.includes('•') ? (
       <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800" textAlign="left">
@@ -52,13 +52,26 @@ const Product = ({ foto, alt, naam, beschrijving, heeftKnop }) => {
       </VStack>
 
       <Image
-        src={foto}
+        src={foto1}
         alt={alt}
         height={imageHeight}
         width={imageWidth}
         objectFit="cover"
         borderRadius="md"
         boxShadow="sm"
+        transition="transform 0.5s ease"
+        _hover={{ transform: 'scale(1.5)' }}
+      />
+      <Image
+        src={foto2}
+        alt={alt}
+        height={imageHeight}
+        width={imageWidth}
+        objectFit="cover"
+        borderRadius="md"
+        boxShadow="sm"
+        transition="transform 0.5s ease"
+        _hover={{ transform: 'scale(1.5)' }}
       />
     </HStack>
   );

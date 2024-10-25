@@ -1,7 +1,8 @@
 export const producten = [
   {
     id: 1,
-    foto: '/product1.jpg',
+    foto1: '/p1a.jpg',
+    foto2: '/p1b.jpg',
     alt: 'Afbeelding van inclusieve braille menukaarten',
     naam: 'Inclusieve braille menukaarten',
     beschrijving: 'Maak je restaurant toegankelijker met onze stijlvolle en duurzame braille menukaarten. '+ 
@@ -11,7 +12,8 @@ export const producten = [
   },
   {
     id: 2,
-    foto: '/product2.jpg',
+    foto1: '/product2.jpg',
+    foto2: '/product2.jpg',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
     naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: 'Zorg voor toegankelijkheid met onze vergrote menukaarten. Duidelijk leesbaar, ' + 
@@ -22,7 +24,8 @@ export const producten = [
 export const productenExtra = [
   {
     id: 1,
-    foto: '/product1.jpg',
+    foto1: '/p1a.jpg',
+    foto2: '/p1b.jpg',
     alt: 'Afbeelding van inclusieve braille menukaarten',
     naam: 'Inclusieve braille menukaarten',
     beschrijving: `Bij ons geloven we in een wereld waarin iedereen zich welkom voelt, ongeacht visuele beperkingen. 
@@ -40,7 +43,8 @@ samenleving. Laat iedereen mee genieten van jouw culinaire aanbod, zonder barri√
   },
   {
     id: 2,
-    foto: '/product2.jpg',
+    foto1: '/product2.jpg',
+    foto2: '/product2.jpg',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
     naam: 'Vergrote menukaarten voor slechtzienden',
     beschrijving: `Maak je menuaanbod toegankelijker voor slechtzienden met onze vergrote menukaarten. 

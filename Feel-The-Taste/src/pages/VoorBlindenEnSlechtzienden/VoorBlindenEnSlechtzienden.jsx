@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const VoorBlindenEnSlechtzienden = () => {
   return (
-    <Box minH="100vh" p={4}>
+    <Box minH="100vh" p={4} ml={{ base: 4, md: 20, lg: 40 }} mr={{ base: 4, md: 20, lg: 40 }}>
       <VStack spacing={6} align="center">
         <Titel titel={'Wat kan Feel The Taste voor u betekenen?'} />
         <Tekstblok tekst={'Bij Feel The Taste geloven we dat iedereen recht heeft ' +
@@ -22,7 +22,8 @@ const VoorBlindenEnSlechtzienden = () => {
           'meer vrijheid en comfort tijdens uw restaurantbezoek!'} />
 
         <Tussentitel titel={'Voordelen voor u'} />
-        <VStack spacing={4} align="flex-start" px={{ base: 4, md: 10 }} ml={40} mr={40}>
+        <VStack spacing={4} align="flex-start" px={{ base: 4, md: 10 }}
+          ml={{ base: 4, md: 10, lg: 40 }} mr={{ base: 4, md: 10, lg: 40 }}>
           <Text fontSize={{ base: 'md', md: 'lg' }} textAlign="left">
             • Zelfstandigheid: U kunt de menukaart zelfstandig lezen, zonder hulp nodig te hebben van iemand anders.
           </Text>
@@ -35,8 +36,8 @@ const VoorBlindenEnSlechtzienden = () => {
           </Text>
         </VStack>
 
-        <Tussentitel titel={'Waar kunt u de menukaarten vinden?'}/>
-        <Text textAlign="center" ml={100} mr={100}>
+        <Tussentitel titel={'Waar kunt u de menukaarten vinden?'} />
+        <Text textAlign="center" ml={{ base: 4, md: 10, lg: 40 }} mr={{ base: 4, md: 10, lg: 40 }}>
           Wij werken samen met verschillende restaurants en cafés die toegankelijk willen zijn voor
           gasten met een visuele beperking.<br />
           Op onze website vindt u&nbsp;

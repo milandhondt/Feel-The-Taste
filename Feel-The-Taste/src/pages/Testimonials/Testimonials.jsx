@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 const Testimonials = () => {
   return (
     <Box minH="100vh" p={4}>
-      <VStack spacing={6} align="center" ml={30} mr={30}>
+      <VStack spacing={6} align="center" ml={{ base: 4, md: 20, lg: 200 }} mr={{ base: 4, md: 20, lg: 200 }}>
         <Titel titel={'Testimonials'} />
-        <Text fontSize="lg" align={'center'} ml={10} mr={10}>
+        <Text fontSize="lg" align={'center'} ml={5} mr={5}>
           We waarderen de feedback van onze eindgebruikers, alsook onze partners.
           Hier zijn enkele getuigenissen van blinden, slechtzienden en partners die onze braille
           of vergrote menukaarten hebben gebruikt:
@@ -27,6 +27,7 @@ const Testimonials = () => {
         </Link>
       </VStack>
     </Box>
+
   );
 };
 

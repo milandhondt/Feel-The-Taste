@@ -1,11 +1,32 @@
-import { Box, Text, VStack } from '@chakra-ui/react';
+import {
+  Box, Text, VStack, Image, Modal, ModalOverlay, ModalContent, ModalCloseButton,
+  ModalBody, useDisclosure,
+} from '@chakra-ui/react';
 import Titel from '../../components/Titel';
 import Tussentitel from '../../components/Tussentitel';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+const alt1 = 'Uit onderzoek blijkt dat 70% van de bevraagde blinden en slechtzienden ' +
+  'de menukaarten heel moeilijk toegankelijk vindt. Daarnaast vindt 10% het moeilijk, en de ' +
+  'overige 20% kiezen voor neutraal of makkelijk';
+const alt2 = 'Hier ziet u dat slechts 20% geen gebruik zou maken van een braille-menukaart. ' +
+  '60% zou hier absoluut gebruik van maken, en 20% twijfelt';
+const alt3 = 'Ook zien we dat de huidige oplossingen voor 60% erg vervelend en onhandig zijn. ' +
+  '30% ondervindt geen problemen, en 10% ondervindt soms problemen.';
 
 const VoorHoreca = () => {
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (src) => {
+    setSelectedImage(src);
+    onOpen();
+  };
+
   return (
-    <Box minH="100vh" p={4} ml={{ base: 5, lg: 310 }} mr={{ base: 5, md: 310 }}>
+    <Box minH="100vh" p={4} ml={{ base: 10, lg: 320 }} mr={{ base: 10, lg: 320 }}>
       <VStack spacing={6} align="center">
         <Titel titel={'Samen voor toegankelijke horeca'} />
 
@@ -33,6 +54,38 @@ const VoorHoreca = () => {
           van de horecazaken is volledig toegankelijk voor deze groep.
         </Text>
 
+        <Image
+          src='/taartje1.png'
+          alt={alt1}
+          width={{ base: '90%', md: '80%', lg: '60%' }}
+          onClick={() => openImage('/taartje1.png')}
+          cursor="pointer"
+        />
+        <Image
+          src='/taartje2.png'
+          alt={alt2}
+          width={{ base: '90%', md: '80%', lg: '60%' }}
+          onClick={() => openImage('/taartje2.png')}
+          cursor="pointer"
+        />
+        <Image
+          src='/taartje3.png'
+          alt={alt3}
+          width={{ base: '90%', md: '80%', lg: '60%' }}
+          onClick={() => openImage('/taartje3.png')}
+          cursor="pointer"
+        />
+
+        {/* Modal for Enlarged Image */}
+        <Modal isOpen={isOpen} onClose={onClose} isCentered size="4xl">
+          <ModalOverlay />
+          <ModalContent>
+            <ModalCloseButton />
+            <ModalBody p={4}>
+              <Image src={selectedImage} alt="Vergrote afbeelding" width="100%" height="auto" />
+            </ModalBody>
+          </ModalContent>
+        </Modal>
         <Tussentitel titel={'Oplossingen'} />
         <Text textAlign="center">
           Bij Feel The Taste bieden we hoogwaardige braille- en vergrote
