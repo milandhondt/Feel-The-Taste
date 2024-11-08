@@ -4,22 +4,21 @@ import Tussentitel from '../../components/Tussentitel';
 import Tekstblok from '../../components/Tekstblok';
 import FotoComp from '../../components/FotoComp';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Sponsors = () => {
+  const { t } = useTranslation();
+
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Sponsors'} />
-        <Tussentitel titel={'Steun inclusiviteit in de horeca!'} />
-        <Tekstblok tekst={'Bij Feel The Taste streven we naar een inclusieve eetervaring voor iedereen. ' +
-          'Door samen te werken met sponsoren kunnen we onze missie om braille en vergrote menukaarten ' +
-          'breder beschikbaar te maken sneller realiseren. Met uw steun kunnen we meer restaurants toegankelijk ' +
-          'maken voor blinde en slechtziende gasten.'} />
+        <Titel titel={t('sponsors_title')} />
+        <Tussentitel titel={t('support_inclusivity_title')} />
+        <Tekstblok tekst={t('support_inclusivity_text')} />
         <Tekstblok tekst={
           <>
-            {'Wil u ons initiatief steunen en tegelijk uw merk zichtbaar maken? Neem dan vandaag nog '}
-            <Link as={RouterLink} to="/contact" color="blue.900" textDecoration="underline">contact</Link>
-            {' met ons op voor sponsormogelijkheden. Samen bouwen we aan een toegankelijke toekomst voor de horeca.'}
+            {t('sponsor_contact_text')} <Link as={RouterLink} to="/contact"
+              color="blue.900" textDecoration="underline">{t('link')}</Link>.
           </>
         } />
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
@@ -41,7 +40,7 @@ const Sponsors = () => {
           </Box>
         </SimpleGrid>
         <Text fontWeight={'bold'} fontSize="2xl" textAlign={'center'}>
-          Alvast bedankt voor uw steun!
+          {t('thank_you_for_support_text')}
         </Text>
       </VStack>
     </Box>

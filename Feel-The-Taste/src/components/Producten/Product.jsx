@@ -1,9 +1,13 @@
 import { useState } from 'react';
-import { HStack, Image, Text, Button, VStack, List, ListItem, useBreakpointValue, 
-  Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalBody } from '@chakra-ui/react';
+import {
+  HStack, Image, Text, Button, VStack, List, ListItem, useBreakpointValue,
+  Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalBody,
+} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
 
   const beschrijvingLijnen = beschrijving.split('\n').map((line, index) => (
@@ -48,7 +52,7 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
                 size="md"
                 borderRadius="full"
               >
-                Klik hier voor meer info
+                {t('product_button_text')}
               </Button>
             </Link>
           )}

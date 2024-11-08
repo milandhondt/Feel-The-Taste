@@ -15,8 +15,7 @@ import Samenwerkingen from './pages/Samenwerkingen/Samenwerkingen';
 import SteunOns from './pages/SteunOns/SteunOns';
 import Testimonials from './pages/Testimonials/Testimonials';
 import Sponsors from './pages/Sponsors/Sponsors';
-
-//TODO ACHTERGROND KLEUR OVERAL AANPASSEN
+import './i18n/i18n';
 
 const router = createBrowserRouter([
   {

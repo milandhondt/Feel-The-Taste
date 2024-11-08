@@ -2,8 +2,10 @@ import { Box, FormControl, FormLabel, Input, Textarea, Button, VStack, useToast 
 import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const toast = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -25,7 +27,7 @@ const Contact = () => {
     const formPayload = new FormData();
 
     try {
-      formPayload.append('access_key', 'd65b92f9-c4b2-4dce-9571-ef00dbbf2d8c'); //TODO access key in .env zetten
+      formPayload.append('access_key', 'd65b92f9-c4b2-4dce-9571-ef00dbbf2d8c');
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
       formPayload.append('telefoon', formData.telefoon);
@@ -41,8 +43,8 @@ const Contact = () => {
 
       if (data.success) {
         toast({
-          title: 'Bericht verzonden.',
-          description: 'Uw bericht is succesvol verzonden. We nemen snel contact met u op.',
+          title: t('contact_form_toast_success_title'),
+          description: t('contact_form_toast_success_description'),
           status: 'success',
           duration: 5000,
           isClosable: true,
@@ -51,18 +53,18 @@ const Contact = () => {
         setFormData({ name: '', email: '', telefoon: '', bedrijfsnaam: '', locatie: '', message: '' });
       } else {
         toast({
-          title: 'Fout opgetreden.',
-          description: 'Er is een fout opgetreden. Probeer het opnieuw.',
+          title: t('contact_form_toast_error_title'),
+          description: t('contact_form_toast_error_description'),
           status: 'error',
           duration: 5000,
           isClosable: true,
         });
       }
-      // eslint-disable-next-line no-unused-vars
+    // eslint-disable-next-line no-unused-vars
     } catch (e) {
       toast({
-        title: 'Fout opgetreden.',
-        description: 'Er is een fout opgetreden. Probeer het opnieuw.',
+        title: t('contact_form_toast_error_title'),
+        description: t('contact_form_toast_error_description'),
         status: 'error',
         duration: 5000,
         isClosable: true,
@@ -73,48 +75,46 @@ const Contact = () => {
   return (
     <Box maxW="600px" mx="auto" p={4}>
       <Box textAlign="center" m={4}>
-        <Tussentitel titel={'Neem contact met ons op!'} />
+        <Tussentitel titel={t('contact_title')} />
       </Box>
-      <Tekstblok tekst={'We horen graag van je! Heb je vragen, suggesties of wil je meer weten over onze braille- ' +
-        'en vergrote menukaarten? Vul het onderstaande formulier in, en we nemen zo snel mogelijk contact met je op. ' +
-        'Samen kunnen we werken aan een toegankelijkere horeca voor iedereen!'} />
+      <Tekstblok tekst={t('contact_text')} />
       <VStack mt={8} spacing={4} as="form" onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="f59010ef-0750-45aa-9940-f4658453be47" />
 
         <FormControl id="naam" isRequired>
-          <FormLabel fontSize="lg">Naam</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_name_label')}</FormLabel>
           <Input type="text" name="name" value={formData.name} onChange={handleChange}
-            placeholder="Uw naam" fontSize="lg" bg="white" required />
+            placeholder={t('contact_form_name_placeholder')} fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id="email" isRequired>
-          <FormLabel fontSize="lg">Email</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_email_label')}</FormLabel>
           <Input type="email" name="email" value={formData.email} onChange={handleChange}
-            placeholder="Uw emailadres" fontSize="lg" bg="white" required />
+            placeholder={t('contact_form_email_placeholder')} fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id='telefoonnr'>
-          <FormLabel fontSize="lg">Telefoonnummer</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_phone_label')}</FormLabel>
           <Input type="tel" name="telefoon" value={formData.telefoon} onChange={handleChange}
-            placeholder="Uw telefoonnummer" fontSize="lg" bg="white" />
+            placeholder={t('contact_form_phone_placeholder')} fontSize="lg" bg="white" />
         </FormControl>
 
         <FormControl id="bedrijfsnaam">
-          <FormLabel fontSize="lg">Bedrijfsnaam</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_company_label')}</FormLabel>
           <Input type="text" name="bedrijfsnaam" value={formData.bedrijfsnaam} onChange={handleChange}
-            placeholder="Uw bedrijfsnaam" fontSize="lg" bg="white" />
+            placeholder={t('contact_form_company_placeholder')} fontSize="lg" bg="white" />
         </FormControl>
 
         <FormControl id="locatie" isRequired>
-          <FormLabel fontSize="lg">Bedrijfslocatie/woonplaats</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_location_label')}</FormLabel>
           <Input type="text" name="locatie" value={formData.locatie} onChange={handleChange}
-            placeholder="Uw bedrijfslocatie of woonplaats" fontSize="lg" bg="white" required />
+            placeholder={t('contact_form_location_placeholder')} fontSize="lg" bg="white" required />
         </FormControl>
 
         <FormControl id="bericht" isRequired>
-          <FormLabel fontSize="lg">Bericht</FormLabel>
+          <FormLabel fontSize="lg">{t('contact_form_message_label')}</FormLabel>
           <Textarea name="message" value={formData.message} onChange={handleChange}
-            placeholder="Uw bericht" fontSize="lg" bg="white" required />
+            placeholder={t('contact_form_message_placeholder')} fontSize="lg" bg="white" required />
         </FormControl>
 
         <Button type="submit"
@@ -124,7 +124,7 @@ const Contact = () => {
           size="lg"
           width="full"
           fontSize="lg">
-          Verstuur
+          {t('contact_form_submit_button')}
         </Button>
       </VStack>
     </Box>

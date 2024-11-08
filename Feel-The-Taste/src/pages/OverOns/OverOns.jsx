@@ -3,19 +3,16 @@ import Titel from '../../components/Titel';
 import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
 import FotoComp from '../../components/FotoComp';
+import { useTranslation } from 'react-i18next';
 
 const OverOns = () => {
+  const { t } = useTranslation();
+
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Over ons'} />
-        <Tekstblok
-          tekst={'Wij zijn Victor, Maxime, Jarno en Matisse ' +
-            'vier enthousiaste studenten van de Arteveldehogeschool. ' +
-            'Voor onze bachelorproef hebben we de feitelijke vereniging Feel The Taste opgericht. ' +
-            'Onze missie is helder: we willen de toegankelijkheid van horecazaken verbeteren voor blinden, ' +
-            'slechtzienden en mensen met visuele beperkingen.'}
-        />
+        <Titel titel={t('about_us_title')} />
+        <Tekstblok tekst={t('about_us_text_1')} />
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
           <Box textAlign="center">
             <FotoComp src={'/oo1.jpg'} alt={'Foto van Victor'} height="200px" width="200px" />
@@ -34,31 +31,13 @@ const OverOns = () => {
             <Text>Matisse Goudeseune</Text>
           </Box>
         </SimpleGrid>
-        <Tussentitel titel={'Onze oorsprong'} />
-        <Tekstblok
-          tekst={'Tijdens onze studie kwamen we erachter dat veel horecazaken ' +
-            'nog niet voldoende rekening houden met de behoeften van gasten met visuele beperkingen. ' +
-            'Dit inspireerde ons om actie te ondernemen en een oplossing te bieden die de ervaring van ' +
-            'deze klanten verbetert. Met onze braille- en vergrote menukaarten zorgen we ervoor dat iedereen ' +
-            'kan genieten van een heerlijke maaltijd zonder barrières.'}
-        />
-        <Tussentitel titel={'Onze waarden'} />
-        <Tekstblok
-          tekst={'Bij Feel The Taste staan inclusiviteit, toegankelijkheid en kwaliteit centraal. ' +
-            'Wij geloven dat iedereen het recht heeft om met vrienden en familie te genieten ' +
-            'van een restaurantbezoek. ' +
-            'Door onze producten te ontwikkelen, dragen we bij aan een gastvrije en inclusieve horecawereld.'}
-        />
-        <Tussentitel titel={'Samenwerking en toekomst'} />
-        <Tekstblok
-          tekst={'We werken samen met horecazaken die onze visie delen en ons ondersteunen in onze missie. ' +
-            'We zijn vastbesloten om meer bewustzijn te creëren over toegankelijkheid in de horeca ' +
-            'en om het gesprek aan te gaan over hoe we samen kunnen verbeteren.'}
-        />
-        <Tekstblok
-          tekst={'Bedankt dat je onze vereniging en onze missie ondersteunt. ' +
-            'Samen kunnen we de horeca toegankelijker maken voor iedereen!'}
-        />
+        <Tussentitel titel={t('our_origin_title')} />
+        <Tekstblok tekst={t('our_origin_text')} />
+        <Tussentitel titel={t('our_values_title')} />
+        <Tekstblok tekst={t('our_values_text')} />
+        <Tussentitel titel={t('collaboration_and_future_title')} />
+        <Tekstblok tekst={t('collaboration_and_future_text')} />
+        <Tekstblok tekst={t('thank_you_text')} />
       </VStack>
     </Box>
   );

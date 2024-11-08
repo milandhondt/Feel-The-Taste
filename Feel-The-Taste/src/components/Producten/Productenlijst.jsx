@@ -1,36 +1,37 @@
 import { Box, VStack, Text } from '@chakra-ui/react';
 import Product from './Product';
 import Tussentitel from '../Tussentitel';
+import { useTranslation } from 'react-i18next';
 
 const Productenlijst = ({ producten = [], heeftKnop }) => {
+  const { t } = useTranslation();
+
   if (!producten.length) {
     return (
       <Box textAlign="center" p={4}>
         <Text fontSize="2xl" fontWeight="bold" mb={4}>
-          Onze Diensten
+          {t('productenlijst_title')}
         </Text>
-        <Text fontSize="md" color="gray.600">Geen producten beschikbaar.</Text>
+        <Text fontSize="md" color="gray.600">{t('productenlijst_no_products')}</Text>
       </Box>
     );
   }
 
   return (
     <Box textAlign="center" p={4}>
-      <Tussentitel titel={'Producten'} />
+      <Tussentitel titel={t('productentiteltje')} />
       <VStack mt={5} spacing={4} align="center">
-        {
-          producten.map((p) => (
-            <Box key={p.id} w="full">
-              <Product
-                foto1={p.foto1}
-                foto2={p.foto2}
-                naam={p.naam}
-                beschrijving={p.beschrijving}
-                heeftKnop={heeftKnop}
-              />
-            </Box>
-          ))
-        }
+        {producten.map((p) => (
+          <Box key={p.id} w="full">
+            <Product
+              foto1={p.foto1}
+              foto2={p.foto2}
+              naam={t(p.naam)}
+              beschrijving={t(p.beschrijving)}
+              heeftKnop={heeftKnop}
+            />
+          </Box>
+        ))}
       </VStack>
     </Box>
   );

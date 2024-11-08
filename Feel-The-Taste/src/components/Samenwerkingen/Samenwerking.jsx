@@ -6,7 +6,7 @@ const Samenwerking = ({ foto, alt, beschrijving }) => {
       <Image
         src={foto}
         alt={alt}
-        boxSize="200px" // Stel de grootte van de afbeelding in
+        boxSize="200px"
         objectFit="cover"
         borderRadius="md"
       />

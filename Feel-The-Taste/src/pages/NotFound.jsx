@@ -1,7 +1,10 @@
 import { Box, Text, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       color="gray.800"
@@ -14,17 +17,17 @@ const NotFound = () => {
       p={4}
     >
       <Text fontSize="5xl" fontWeight="bold" mb={4}>
-        Pagina niet gevonden
+        {t('not_found_title')}
       </Text>
       <Text fontSize="4xl" mb={8}>
-        Oeps! Het lijkt erop dat je op een pagina bent beland die niet bestaat.
+        {t('not_found_message')}
       </Text>
       <Link to="/">
         <Button bg="gray.800" color='#FFFDE7' _hover={{ bg: 'gray.600' }} size="lg">
-          Terug naar de homepagina
+          {t('not_found_button')}
         </Button>
       </Link>
-    </Box >
+    </Box>
   );
 };
 

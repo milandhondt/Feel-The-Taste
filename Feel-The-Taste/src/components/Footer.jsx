@@ -1,7 +1,9 @@
 import { Box, Text, Link, Flex, Image } from '@chakra-ui/react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const jaar = new Date().getFullYear();
 
   return (
@@ -21,29 +23,30 @@ const Footer = () => {
           />
           <Box>
             <Text fontSize="2xl" fontWeight="bold" mb={1} color="#FFFDE7">
-              Contact
+              {t('footer_contact')}
             </Text>
             <Text fontSize={'lg'} color="#FFFDE7">
-              Email: <Link href="mailto:info@feelthetaste.be" color="#FFFDE7" textDecoration="underline">
+              Email:&nbsp;
+              <Link href="mailto:info@feelthetaste.be" color="#FFFDE7" textDecoration="underline">
                 info@feelthetaste.be</Link>
             </Text>
-            <Text fontSize={'lg'} color="#FFFDE7">Telefoon: +32 470 42 55 86</Text>
+            <Text fontSize={'lg'} color="#FFFDE7">{t('footer_phone')}</Text>
           </Box>
         </Flex>
 
         <Box mt={[4, 4, 0]}>
           <Text fontSize="2xl" fontWeight="bold" mb={2} color="#FFFDE7">
-            Volg ons!
+            {t('footer_follow_us')}
           </Text>
           <Link href="https://www.facebook.com/profile.php?id=61567379101819" isExternal color="#FFFDE7"
             mr={4} display="flex" alignItems="center">
             <FaFacebook style={{ marginRight: '4px' }} />
-            <Text fontSize={'lg'}>Facebook</Text>
+            <Text fontSize={'lg'}>{t('footer_facebook')}</Text>
           </Link>
           <Link href="https://instagram.com/feelthetaste_bp" isExternal color="#FFFDE7"
             display="flex" alignItems="center">
             <FaInstagram style={{ marginRight: '4px' }} />
-            <Text fontSize={'lg'}>Instagram</Text>
+            <Text fontSize={'lg'}>{t('footer_instagram')}</Text>
           </Link>
         </Box>
       </Flex>
@@ -57,7 +60,7 @@ const Footer = () => {
       />
 
       <Text textAlign="center" fontSize="md" borderTop="1px solid white" pt={4}>
-        © {jaar} Feel The Taste. Alle rechten voorbehouden.
+        {t('footer_rights_reserved', { jaar })}
       </Text>
     </Box>
   );

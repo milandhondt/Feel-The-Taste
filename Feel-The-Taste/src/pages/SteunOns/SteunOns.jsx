@@ -3,21 +3,19 @@ import Titel from '../../components/Titel';
 import Tussentitel from '../../components/Tussentitel';
 import Tekstblok from '../../components/Tekstblok';
 import FotoComp from '../../components/FotoComp';
+import { useTranslation } from 'react-i18next';
 
 const SteunOnsProject = () => {
+  const { t } = useTranslation();
+
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center">
-        <Titel titel={'Steun het project'} />
-        <Tussentitel titel={'Maakt u samen met ons horeca toegankelijker?'} />
-        <Tekstblok tekst={'Bij Feel The Taste geloven we in een wereld waarin iedereen toegang heeft tot ' +
-          'een zorgeloze eetervaring, ongeacht visuele beperkingen. Om dit te realiseren, willen we zoveel ' +
-          'mogelijk restaurants voorzien van braille- en vergrote menukaarten.'} />
-        <Tekstblok tekst={'Binnenkort starten we een crowdfundingcampagne om dit belangrijke doel te bereiken, ' +
-          'en we kunnen uw steun goed gebruiken! Door bij te dragen helpt u ons om inclusiviteit in de horeca te ' +
-          'vergroten en meer locaties toegankelijk te maken voor blinde en slechtziende gasten.'} />
-        <Tekstblok tekst={'Samen kunnen we echt een verschil maken! Houd deze pagina in de gaten voor updates en ' +
-          'de lancering van onze campagne.'} />
+        <Titel titel={t('support_project_title')} />
+        <Tussentitel titel={t('make_hospitality_accessible_title')} />
+        <Tekstblok tekst={t('support_project_text1')} />
+        <Tekstblok tekst={t('support_project_text2')} />
+        <Tekstblok tekst={t('support_project_text3')} />
         <Link
           href="https://crowdfundinglink.com"
           isExternal
@@ -25,7 +23,7 @@ const SteunOnsProject = () => {
           fontSize="lg"
           textDecorationLine={'underline'}
         >
-          Steun het project hier!
+          {t('support_project_link')}
         </Link>
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
           <Box textAlign="center">
@@ -46,7 +44,7 @@ const SteunOnsProject = () => {
           </Box>
         </SimpleGrid>
         <Text fontWeight={'bold'} fontSize={'2xl'}>
-          Alvast bedankt voor uw steun!
+          {t('thank_you_for_support_text')}
         </Text>
       </VStack>
     </Box>

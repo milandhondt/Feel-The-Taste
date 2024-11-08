@@ -4,20 +4,16 @@ export const producten = [
     foto1: '/p1a.jpg',
     foto2: '/p1b.jpg',
     alt: 'Afbeelding van inclusieve braille menukaarten',
-    naam: 'Inclusieve braille menukaarten',
-    beschrijving: 'Maak je restaurant toegankelijker met onze stijlvolle en duurzame braille menukaarten. '+ 
-    'Speciaal ontworpen voor blinde en slechtziende klanten, met aanpasbare ' + 
-    'opties die passen bij jouw menuaanbod en huisstijl. '+
-    'Toegankelijkheid begint hier!',
+    naam: 'products.1.naam',
+    beschrijving: 'products.1.beschrijving',
   },
   {
     id: 2,
     foto1: '/p2a.png',
     foto2: '/p2b.png',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
-    naam: 'Vergrote menukaarten voor slechtzienden',
-    beschrijving: 'Zorg voor toegankelijkheid met onze vergrote menukaarten. Duidelijk leesbaar, ' + 
-    'stijlvol en volledig personaliseerbaar. Een eenvoudige manier om alle gasten een zorgeloze ervaring te bieden!',
+    naam: 'products.2.naam',
+    beschrijving: 'products.2.beschrijving',
   },
 ];
 
