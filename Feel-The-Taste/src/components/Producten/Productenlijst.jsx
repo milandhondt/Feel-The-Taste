@@ -3,7 +3,7 @@ import Product from './Product';
 import Tussentitel from '../Tussentitel';
 import { useTranslation } from 'react-i18next';
 
-const Productenlijst = ({ producten = [], heeftKnop }) => {
+const Productenlijst = ({ producten = [], heeftKnop, m }) => {
   const { t } = useTranslation();
 
   if (!producten.length) {
@@ -18,7 +18,7 @@ const Productenlijst = ({ producten = [], heeftKnop }) => {
   }
 
   return (
-    <Box textAlign="center" p={4}>
+    <Box textAlign="center" p={4} m={m}>
       <Tussentitel titel={t('productentiteltje')} />
       <VStack mt={5} spacing={4} align="center">
         {producten.map((p) => (

@@ -11,7 +11,7 @@ const Testimonials = () => {
   return (
     <Box minH="100vh" p={4}>
       <VStack spacing={6} align="center" ml={{ base: 4, md: 20, lg: 200 }} mr={{ base: 4, md: 20, lg: 200 }}>
-        <Titel titel={t('testimonials_title')} />
+        <Titel titel={t('testimonials_title') }/>
         <Text fontSize="lg" align={'center'} ml={5} mr={5}>
           {t('testimonials_intro_text')}
         </Text>

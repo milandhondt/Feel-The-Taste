@@ -11,22 +11,23 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <Box minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4}>
-      <VStack spacing={6}>
-        <Titel titel={t('welcome')} />
+    <Box minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4} m={4}>
+      <VStack spacing={6} m={4}>
+        <Titel titel={t('welcome')} m={20} />
         <Image
           src="/logotje.png"
           alt="Logo van feel the taste"
-          boxSize="300px"
+          boxSize="280px"
           objectFit="cover"
+          m={4}
         />
-        <Tussentitel titel={t('accessible_menus')} />
-        <Tekstblok tekst={t('main_text')} />
-        <Productenlijst producten={producten} heeftKnop={true} />
-        <Tussentitel titel={t('questions_title')} />
-        <Tekstblok tekst={t('questions_text')} />
+        <Tussentitel titel={t('accessible_menus')} m={8} />
+        <Tekstblok tekst={t('main_text')} m={8} />
+        <Productenlijst producten={producten} heeftKnop={true} m={4} />
+        <Tussentitel titel={t('questions_title')} m={8} />
+        <Tekstblok tekst={t('questions_text')} m={12} />
         <Link to="/contact">
-          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} size="lg">
+          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} size="lg" m={4}>
             {t('contact_button')}
           </Button>
         </Link>

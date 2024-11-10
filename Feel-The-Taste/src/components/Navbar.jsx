@@ -14,7 +14,6 @@ const Navbar = () => {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    console.log(`Taal veranderd naar: ${lang}`);
   };
 
   return (
@@ -82,6 +81,9 @@ const Navbar = () => {
               <IconButton onClick={() => changeLanguage('fr')} aria-label={t('switch_to_french')} variant="ghost">
                 <ReactCountryFlag countryCode="FR" svg style={{ width: '2em', height: '2em' }} title="Français" />
               </IconButton>
+              <IconButton onClick={() => changeLanguage('de')} aria-label={t('switch_to_german')} variant="ghost">
+                <ReactCountryFlag countryCode="DE" svg style={{ width: '2em', height: '2em' }} title="Deutsch" />
+              </IconButton>
             </Flex>
           </Stack>
         </Flex>
@@ -139,6 +141,9 @@ const Navbar = () => {
             </IconButton>
             <IconButton onClick={() => changeLanguage('fr')} aria-label={t('switch_to_french')} variant="ghost">
               <ReactCountryFlag countryCode="FR" svg style={{ width: '2em', height: '2em' }} title="Français" />
+            </IconButton>
+            <IconButton onClick={() => changeLanguage('de')} aria-label={t('switch_to_german')} variant="ghost">
+              <ReactCountryFlag countryCode="DE" svg style={{ width: '2em', height: '2em' }} title="Deutsch" />
             </IconButton>
           </Flex>
         </Stack>

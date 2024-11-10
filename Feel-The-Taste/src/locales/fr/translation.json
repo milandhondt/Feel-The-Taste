@@ -127,6 +127,7 @@
   "switch_to_dutch": "Verander naar nederlands",
   "switch_to_english": "Switch to English",
   "switch_to_french": "Passer au français",
+  "switch_to_german": "Wechseln Sie zu Deutsch",
   "footer_contact": "Contact",
   "footer_email": "Email: info@feelthetaste.be",
   "footer_phone": "Téléphone: +32 470 42 55 86",
@@ -138,7 +139,7 @@
   "productenlijst_title": "Nos services",
   "productenlijst_no_products": "Aucun produit disponible.",
   "productenlijst_section_title": "Produits",
-  "product_button_text": "Cliquez ici pour plus d'informations",
+  "product_button_text": "Plus d'informations",
   "products": {
     "1": {
       "naam": "Menus en braille inclusifs",

@@ -1,8 +1,8 @@
 import { Heading } from '@chakra-ui/react';
 
-const Titel = ({ titel }) => {
+const Titel = ({ titel, m }) => {
   return (
-    <Heading as="h1" textAlign='center' size="2xl" mb={4} mt={5}>{titel}</Heading>
+    <Heading as="h1" m={m} textAlign='center' size="2xl" mb={4} mt={5}>{titel}</Heading>
   );
 };
 

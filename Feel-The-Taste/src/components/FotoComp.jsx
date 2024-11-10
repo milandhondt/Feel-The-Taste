@@ -1,6 +1,6 @@
 import { Image } from '@chakra-ui/react';
 
-const FotoComp = ({ src, alt, height, width }) => {
+const FotoComp = ({ src, alt, height, width, m }) => {
   return (
     <Image
       src={src}
@@ -10,6 +10,7 @@ const FotoComp = ({ src, alt, height, width }) => {
       objectFit="cover"
       borderRadius="md"
       boxShadow="sm"
+      m={m}
     />
   );
 };
