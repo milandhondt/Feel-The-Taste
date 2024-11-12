@@ -2,7 +2,9 @@ import { Heading } from '@chakra-ui/react';
 
 const Titel = ({ titel, m }) => {
   return (
-    <Heading as="h1" m={m} textAlign='center' size="2xl" mb={4} mt={5}>{titel}</Heading>
+    //TODO MARGINS AANPASSEN OM OP ALLE TALEN FEEL THE TASTE OP DEZELFDE LIJN TE HEBBEN
+    <Heading as="h1" marginTop={m} marginLeft={m / 4} mr={m / 4} marginBottom={m} textAlign='center' size="2xl"
+      mb={4} mt={5}>{titel}</Heading>
   );
 };
 

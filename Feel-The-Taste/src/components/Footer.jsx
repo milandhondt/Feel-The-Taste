@@ -12,14 +12,15 @@ const Footer = () => {
         justify="space-between"
         direction={['column', 'column', 'row']}
         mb={4}
-        overflow="hidden" // Zorg ervoor dat de footer niet buiten de viewport valt
+        overflow="hidden"
       >
         <Flex alignItems="normal" direction={['column', 'column', 'row']}>
           <Image
             src="/logozwart.jpg"
             alt="Feel the Taste Logo"
-            boxSize={['100px', '125px']}  // Dynamische grootte voor kleinere schermen
+            boxSize={['100px', '125px']}
             display={['none', 'none', 'block']}
+            mr={5}
           />
           <Box>
             <Text fontSize="2xl" fontWeight="bold" mb={1} color="#FFFDE7">

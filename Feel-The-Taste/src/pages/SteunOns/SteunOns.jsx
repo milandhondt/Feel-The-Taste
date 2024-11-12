@@ -16,6 +16,9 @@ const SteunOnsProject = () => {
         <Tekstblok tekst={t('support_project_text1')} />
         <Tekstblok tekst={t('support_project_text2')} />
         <Tekstblok tekst={t('support_project_text3')} />
+        <Text ml={5} mr={5} align={'center'} fontStyle={'italic'}>
+          {t('binnenkort_beschikbaar')}          
+        </Text>
         <Link
           href="https://crowdfundinglink.com"
           isExternal

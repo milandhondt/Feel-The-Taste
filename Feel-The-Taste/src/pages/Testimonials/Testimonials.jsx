@@ -16,6 +16,10 @@ const Testimonials = () => {
           {t('testimonials_intro_text')}
         </Text>
 
+        <Text ml={5} mr={5} align={'center'} fontStyle={'italic'}>
+          {t('testimonials_illustratie')}
+        </Text>
+
         <TestimonialLijst testimonials={testimonials} />
 
         <Text fontSize="lg" textAlign={'center'}>

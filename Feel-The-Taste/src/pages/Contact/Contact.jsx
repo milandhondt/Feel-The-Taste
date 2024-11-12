@@ -27,7 +27,7 @@ const Contact = () => {
     const formPayload = new FormData();
 
     try {
-      formPayload.append('access_key', 'd65b92f9-c4b2-4dce-9571-ef00dbbf2d8c');
+      formPayload.append('access_key', 'edcdbd75-a064-487a-98de-3407cf7e02b8');
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
       formPayload.append('telefoon', formData.telefoon);
@@ -60,7 +60,7 @@ const Contact = () => {
           isClosable: true,
         });
       }
-    // eslint-disable-next-line no-unused-vars
+      // eslint-disable-next-line no-unused-vars
     } catch (e) {
       toast({
         title: t('contact_form_toast_error_title'),
