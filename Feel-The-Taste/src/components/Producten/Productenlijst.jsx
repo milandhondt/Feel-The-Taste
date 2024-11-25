@@ -12,7 +12,7 @@ const Productenlijst = ({ producten = [], heeftKnop, m }) => {
         <Text fontSize="2xl" fontWeight="bold" mb={4}>
           {t('productenlijst_title')}
         </Text>
-        <Text fontSize="md" color="gray.600">{t('productenlijst_no_products')}</Text>
+        <Text fontSize="md">{t('productenlijst_no_products')}</Text>
       </Box>
     );
   }

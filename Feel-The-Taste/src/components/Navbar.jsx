@@ -1,4 +1,4 @@
-import { Box, Flex, IconButton, Stack, Text, Collapse, Button } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Stack, Text, Collapse, Button, Image } from '@chakra-ui/react';
 import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import { HamburgerIcon } from '@chakra-ui/icons';
@@ -19,8 +19,11 @@ const Navbar = () => {
   return (
     <Box bg="gray.800" px={4}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
-        <NavLink to='/home'>
-          <Text fontSize="4xl" fontWeight="bold" color="#FFFDE7">{t('navbar_home')}</Text>
+        <NavLink to="/home">
+          <Flex alignItems="center">
+            <Image src="/logozwart.jpg" alt="Logo" h={12} mr={4} />
+            <Text fontSize="2xl" color="#e6e6e6" fontWeight="bold">{t('navbar_home')}</Text>
+          </Flex>
         </NavLink>
 
         <IconButton
@@ -30,44 +33,37 @@ const Navbar = () => {
           aria-label={t('navbar_more')}
           display={{ md: 'none' }}
           onClick={toggleMenu}
-          _hover={{ bg: '#F6EBB9' }}
         />
 
         <Flex display={{ base: 'none', md: 'flex' }} alignItems="center">
-          <Stack direction="row" spacing={8} alignItems="center">
+          <Stack direction="row" spacing={8} alignItems="center" color="#e6e6e6"
+          >
             <NavLink to="/over-ons">
-              <Text fontSize="lg" color="#FFFDE7">{t('navbar_about')}</Text>
+              <Text color="#e6e6e6" fontSize="lg">{t('navbar_about')}</Text>
             </NavLink>
             <NavLink to="/contact">
-              <Text fontSize="lg" color="#FFFDE7">{t('navbar_contact')}</Text>
+              <Text color="#e6e6e6" fontSize="lg" >{t('navbar_contact')}</Text>
+            </NavLink>
+            <NavLink to="/diensten-en-producten">
+              <Text color="#e6e6e6" fontSize="lg">{t('navbar_services')}</Text>
             </NavLink>
             <Menu>
               <MenuButton
                 as={Button}
-                bg="#FFFDE7"
-                color="gray.800"
+                bg="#e6e6e6"
                 variant="outline"
                 fontSize="lg"
-                _hover={{ bg: '#F6EBB9' }}
               >
                 {t('navbar_more')}
               </MenuButton>
-              <MenuList bg="gray.800" color="#FFFDE7">
-                <MenuItem as={NavLink} to="/diensten-en-producten"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_services')}</MenuItem>
-                <MenuItem as={NavLink} to="/voor-horeca"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_for_horeca')}</MenuItem>
-                <MenuItem as={NavLink} to="/voor-blinden-en-slechtzienden"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>
+              <MenuList bg={'gray.800'}>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/voor-horeca">{t('navbar_for_horeca')}</MenuItem>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/voor-blinden-en-slechtzienden">
                   {t('navbar_for_blind_and_visually_impaired')}</MenuItem>
-                <MenuItem as={NavLink} to="/samenwerkingen"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_collaborations')}</MenuItem>
-                <MenuItem as={NavLink} to="/steun-ons"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_support_project')}</MenuItem>
-                <MenuItem as={NavLink} to="/testimonials"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_testimonials')}</MenuItem>
-                <MenuItem as={NavLink} to="/sponsors"
-                  bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_sponsors')}</MenuItem>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/samenwerkingen">{t('navbar_collaborations')}</MenuItem>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/steun-ons">{t('navbar_support_project')}</MenuItem>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/testimonials">{t('navbar_testimonials')}</MenuItem>
+                <MenuItem bg={'gray.800'} as={NavLink} to="/sponsors">{t('navbar_sponsors')}</MenuItem>
               </MenuList>
             </Menu>
 
@@ -95,40 +91,34 @@ const Navbar = () => {
           alignItems="center"
           display={{ base: 'flex', md: 'none' }}
           py={4}
+          color="#e6e6e6"
         >
           <NavLink to="/over-ons">
-            <Text fontSize="lg" color="#FFFDE7">{t('navbar_about')}</Text>
+            <Text color="#e6e6e6" fontSize="lg">{t('navbar_about')}</Text>
           </NavLink>
           <NavLink to="/contact">
-            <Text fontSize="lg" color="#FFFDE7">{t('navbar_contact')}</Text>
+            <Text color="#e6e6e6" fontSize="lg" >{t('navbar_contact')}</Text>
+          </NavLink>
+          <NavLink to="/diensten-en-producten">
+            <Text color="#e6e6e6" fontSize="lg">{t('navbar_services')}</Text>
           </NavLink>
           <Menu>
             <MenuButton
               as={Button}
-              bg="#FFFDE7"
-              color="gray.800"
+              bg="#e6e6e6"
               variant="outline"
               fontSize="lg"
-              _hover={{ bg: '#F6EBB9' }}
             >
               {t('navbar_more')}
             </MenuButton>
-            <MenuList bg="gray.800" color="#FFFDE7">
-              <MenuItem as={NavLink} to="/diensten-en-producten"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_services')}</MenuItem>
-              <MenuItem as={NavLink} to="/voor-horeca"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_for_horeca')}</MenuItem>
-              <MenuItem as={NavLink} to="/voor-blinden-en-slechtzienden"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>
+            <MenuList bg={'gray.800'}>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/voor-horeca">{t('navbar_for_horeca')}</MenuItem>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/voor-blinden-en-slechtzienden">
                 {t('navbar_for_blind_and_visually_impaired')}</MenuItem>
-              <MenuItem as={NavLink} to="/samenwerkingen"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_collaborations')}</MenuItem>
-              <MenuItem as={NavLink} to="/steun-ons"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_support_project')}</MenuItem>
-              <MenuItem as={NavLink} to="/testimonials"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_testimonials')}</MenuItem>
-              <MenuItem as={NavLink} to="/sponsors"
-                bg="gray.800" color="#FFFDE7" _hover={{ bg: 'gray.700' }}>{t('navbar_sponsors')}</MenuItem>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/samenwerkingen">{t('navbar_collaborations')}</MenuItem>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/steun-ons">{t('navbar_support_project')}</MenuItem>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/testimonials">{t('navbar_testimonials')}</MenuItem>
+              <MenuItem bg={'gray.800'} as={NavLink} to="/sponsors">{t('navbar_sponsors')}</MenuItem>
             </MenuList>
           </Menu>
 

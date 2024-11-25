@@ -10,17 +10,19 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const beschrijvingLijnen = beschrijving.split('\n').map((line, index) => (
-    line.includes('•') ? (
-      <ListItem key={index} ml={4} mb={2} fontSize="md" color="gray.800" textAlign="left">
-        {line.trim()}
-      </ListItem>
-    ) : (
-      <Text key={index} fontSize="md" color="gray.800" textAlign="left">
-        {line.trim()}
-      </Text>
-    )
-  ));
+  const beschrijvingLijnen = beschrijving
+    ? beschrijving.split('\n').map((line, index) => (
+      line.includes('•') ? (
+        <ListItem key={index} ml={4} mb={2} fontSize="md" textAlign="left">
+          {line.trim()}
+        </ListItem>
+      ) : (
+        <Text key={index} fontSize="md" color="gray.800" textAlign="left">
+          {line.trim()}
+        </Text>
+      )
+    ))
+    : [];
 
   const stackSpacing = useBreakpointValue({ base: 4, md: 8 });
 
@@ -30,14 +32,12 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
         spacing={stackSpacing}
         align="start"
         p={4}
-        bg="gray.50"
         borderRadius="md"
-        boxShadow="md"
         w="full"
         flexDirection={{ base: 'column', md: 'row' }}
       >
         <VStack align="left" spacing={4} flex={1}>
-          <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="bold" color="gray.800" textAlign="left">
+          <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="bold" textAlign="left">
             {naam}
           </Text>
           <List spacing={1} textAlign="left">
@@ -45,13 +45,7 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
           </List>
           {heeftKnop && (
             <Link to="/diensten-en-producten">
-              <Button
-                bg="gray.800"
-                color="white"
-                _hover={{ bg: 'gray.600' }}
-                size="md"
-                borderRadius="full"
-              >
+              <Button size="md" borderRadius="full">
                 {t('product_button_text')}
               </Button>
             </Link>
@@ -59,7 +53,7 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
         </VStack>
 
         <HStack spacing={2} flexWrap="wrap" align="center" justify="center">
-          {[foto1, foto2].map((foto, index) => (
+          {[foto1, foto2].filter(Boolean).map((foto, index) => ( // Filter niet-geldige waarden
             <Image
               key={index}
               src={foto}
@@ -67,8 +61,6 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
               height={{ base: '200px', md: '250px' }}
               width={{ base: '200px', md: '250px' }}
               objectFit="contain"
-              borderRadius="md"
-              boxShadow="sm"
               transition="transform 0.5s ease"
               _hover={{ transform: 'scale(1.1)' }}
               onClick={() => setSelectedImage(foto)}

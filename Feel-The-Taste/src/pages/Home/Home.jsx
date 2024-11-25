@@ -8,7 +8,7 @@ import { useState } from 'react';
 import Titel from '../../components/Titel';
 import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
-import Productenlijst from '../../components/Producten/Productenlijst';
+import ProductenlijstHome from '../../components/Producten/ProductenlijstHome';
 import { producten } from '../../api/producten';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <Box minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4} m={4}>
       <VStack spacing={6} m={4}>
-        <Titel titel={t('welcome')} m={20} />
+        <Titel titel={t('welcome')} m={28} />
 
         <Image
           src="/logotje.png"
@@ -49,8 +49,8 @@ const Home = () => {
         </Modal>
 
         <Tussentitel titel={t('accessible_menus')} m={8} />
-        <Tekstblok tekst={t('main_text')} m={8} />
-        <Productenlijst producten={producten} heeftKnop={true} m={4} />
+        <Tekstblok tekst={t('main_text')} m={12} />
+        <ProductenlijstHome producten={producten} heeftKnop={true} m={4} />
         <Tussentitel titel={t('questions_title')} m={8} />
         <Tekstblok tekst={t('questions_text')} m={12} />
         <Link to="/contact">

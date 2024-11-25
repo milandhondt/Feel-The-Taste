@@ -2,13 +2,12 @@ import { extendTheme } from "@chakra-ui/react";
 
 const thema = extendTheme({
   colors: {
-    customColor: "#FFFDE7",
+    customColor: "#e6e6e6",
   },
   styles: {
     global: {
       body: {
         bg: "customColor",
-        color: "gray.800",
       },
       '*': {
         fontSize: 'lg',
@@ -16,8 +15,8 @@ const thema = extendTheme({
     },
   },
   fonts: {
-    heading: "'Roboto', sans-serif",
-    body: "'Roboto', sans-serif",
+    heading: "Josefin Sans",
+    body: "Josefin Sans",
   },
 });
 

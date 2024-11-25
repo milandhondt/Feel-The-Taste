@@ -7,7 +7,7 @@ const Footer = () => {
   const jaar = new Date().getFullYear();
 
   return (
-    <Box as="footer" bg="gray.800" color="#FFFDE7" py={6} px={8} m={0} w={'100%'}>
+    <Box as="footer" bg="gray.800" color="#e6e6e6" py={6} px={8} m={0} w={'100%'}>
       <Flex
         justify="space-between"
         direction={['column', 'column', 'row']}
@@ -23,30 +23,30 @@ const Footer = () => {
             mr={5}
           />
           <Box>
-            <Text fontSize="2xl" fontWeight="bold" mb={1} color="#FFFDE7">
+            <Text fontSize="2xl" fontWeight="bold" mb={1}>
               {t('footer_contact')}
             </Text>
-            <Text fontSize={'lg'} color="#FFFDE7">
+            <Text fontSize={'lg'}>
               Email:&nbsp;
-              <Link href="mailto:info@feelthetaste.be" color="#FFFDE7" textDecoration="underline">
+              <Link href="mailto:info@feelthetaste.be" textDecoration="underline">
                 info@feelthetaste.be
               </Link>
             </Text>
-            <Text fontSize={'lg'} color="#FFFDE7">{t('footer_phone')}</Text>
+            <Text fontSize={'lg'}>{t('footer_phone')}</Text>
           </Box>
         </Flex>
 
         <Box mt={[4, 4, 0]} py={[2, 2, 4]}>
-          <Text fontSize="2xl" fontWeight="bold" mb={2} color="#FFFDE7">
+          <Text fontSize="2xl" fontWeight="bold" mb={2}>
             {t('footer_follow_us')}
           </Text>
           <Link href="https://www.facebook.com/profile.php?id=61567379101819" isExternal
-            color="#FFFDE7" display="flex" alignItems="center">
+            display="flex" alignItems="center">
             <FaFacebook style={{ marginRight: '4px' }} />
             <Text fontSize={'lg'}>{t('footer_facebook')}</Text>
           </Link>
           <Link href="https://instagram.com/feelthetaste_be"
-            isExternal color="#FFFDE7" display="flex" alignItems="center">
+            isExternal display="flex" alignItems="center">
             <FaInstagram style={{ marginRight: '4px' }} />
             <Text fontSize={'lg'}>{t('footer_instagram')}</Text>
           </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
       <Image
         src="/logozwart.jpg"
         alt="Feel the Taste Logo"
-        boxSize={ '125px'}
+        boxSize={'125px'}
         mb={5}
         display={['block', 'block', 'none']}
       />
