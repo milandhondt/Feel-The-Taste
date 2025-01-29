@@ -24,7 +24,7 @@
   "contact_form_toast_success_description": "Votre message a été envoyé avec succès. Nous vous contacterons bientôt.",
   "contact_form_toast_error_title": "Une erreur est survenue.",
   "contact_form_toast_error_description": "Une erreur est survenue. Veuillez réessayer.",
-  "services_and_products_title": "Services & Produits",
+  "services_and_products_title": "Offres",
   "services_title": "Services",
   "services_text_1": "Chez Feel The Taste, nous améliorons l'accessibilité des établissements de restauration pour les aveugles, les malvoyants et les personnes ayant des déficiences visuelles. Nous aidons les restaurants et les cafés à rendre leurs offres de menus plus accessibles, afin que tous leurs invités puissent faire des choix de manière autonome.",
   "services_text_2": "Notre objectif n'est pas seulement de proposer des produits, mais aussi de soutenir les établissements de restauration dans la création d'un environnement inclusif. Ensemble, nous pouvons sensibiliser à l'importance de l'inclusion dans l'industrie de l'hôtellerie.",
@@ -117,7 +117,7 @@
   "navbar_about": "À propos",
   "navbar_contact": "Contact",
   "navbar_more": "Plus",
-  "navbar_services": "Services & Produits",
+  "navbar_services": "Offres",
   "navbar_for_horeca": "Pour les restaurants",
   "navbar_for_blind_and_visually_impaired": "Pour les aveugles et malvoyants",
   "navbar_collaborations": "Collaborations",
@@ -150,6 +150,10 @@
     "2": {
       "naam": "Menus agrandis pour malvoyants",
       "beschrijving": "Assurez l'accessibilité avec nos menus en grands caractères. Faciles à lire, élégants et entièrement personnalisables. Une manière simple d'offrir à tous vos clients une expérience sans souci !"
+    },
+    "3": {
+      "naam": "Loupes à champ lumineux pour malvoyants",
+      "beschrijving": "Les loupes à champ lumineux de Feel The Taste sont conçues pour offrir une meilleure expérience aux personnes malvoyantes dans les établissements horeca. Grâce à leur design compact et facile à utiliser, elles agrandissent et éclaircissent les menus, facilitant ainsi la lecture dans différentes conditions d’éclairage. Ces loupes permettent de voir les détails plus nettement, afin que les clients puissent faire leur choix de manière autonome et profiter pleinement de leur visite au restaurant."
     }
   },
   "productsExtra": {
@@ -160,6 +164,10 @@
     "2": {
       "naam": "Menus agrandis pour malvoyants",
       "beschrijving": "Rendez votre offre de menu plus accessible aux malvoyants grâce à nos menus agrandis. Ces cartes sont spécialement conçues pour les clients ayant une vision réduite, afin qu'ils puissent lire et choisir facilement vos plats et boissons. Nos menus agrandis offrent:\n\n• Lisibilité claire: De grandes lettres claires et une disposition bien organisée.\n\n• Élégant et professionnel: Parfaitement adapté à votre restaurant sans compromettre l’élégance.\n\n• Entièrement personnalisable: Ajoutez votre logo, style et éléments de menu pour un rendu unique.\n\nAvec nos menus agrandis, vous vous assurez que tous vos invités se sentent les bienvenus et à l'aise, quelles que soient leurs limitations visuelles. Faites le premier pas vers une expérience de restauration inclusive!"
+    },
+    "3": {
+      "naam": "Loupes à champ lumineux pour malvoyants",
+      "beschrijving": "Améliorez l'accessibilité de votre menu avec nos loupes à champ lumineux, spécialement conçues pour les clients malvoyants. Ces loupes permettent à vos invités de lire votre menu sans effort et de faire leur choix en toute autonomie.\nNos loupes à champ lumineux offrent :\n\n• Un grossissement exceptionnel – Une vision claire et nette, sans distorsion.\n\n• Compactes et élégantes – Légères et discrètes, parfaites pour la table.\n\n• Faciles à utiliser – Aucune pile nécessaire, prêtes à l'emploi immédiatement.Avec les loupes à champ lumineux, vous offrez une expérience culinaire accueillante et inclusive. \n\nRendez votre restaurant plus accessible et permettez à chaque client de profiter d'un repas en toute sérénité !"
     }
   }
 }

@@ -24,7 +24,7 @@
   "contact_form_toast_success_description": "Your message has been sent successfully. We will contact you soon.",
   "contact_form_toast_error_title": "Error occurred.",
   "contact_form_toast_error_description": "An error occurred. Please try again.",
-  "services_and_products_title": "Services & Products",
+  "services_and_products_title": "Offerings",
   "productenlijst_title": "Our products",
   "productentiteltje": "Products",
   "services_title": "Services",
@@ -119,7 +119,7 @@
   "navbar_about": "About Us",
   "navbar_contact": "Contact",
   "navbar_more": "More",
-  "navbar_services": "Services & Products",
+  "navbar_services": "Offerings",
   "navbar_for_horeca": "For Horeca",
   "navbar_for_blind_and_visually_impaired": "For Blind and Visually Impaired",
   "navbar_collaborations": "Collaborations",
@@ -148,6 +148,10 @@
     "2": {
       "naam": "Large Print Menus for Visually Impaired",
       "beschrijving": "Ensure accessibility with our large print menus. Clearly readable, stylish, and fully customizable. A simple way to offer all guests a seamless experience!"
+    },
+    "3": {
+      "naam": "Light field magnifiers for visually impaired",
+      "beschrijving": "Feel The Taste’s light field magnifiers are designed to provide a better dining experience for visually impaired guests. With their compact and user-friendly design, they magnify and clarify menus, making reading easier in different lighting conditions. These magnifiers help enhance detail visibility, allowing guests to make their choices independently and fully enjoy their restaurant visit."
     }
   },
   "productsExtra": {
@@ -158,6 +162,10 @@
     "2": {
       "naam": "Large Print Menus for the Visually Impaired",
       "beschrijving": "Make your menu offerings more accessible to visually impaired individuals with our large print menus. These menus are specially designed for customers with reduced vision, so they can easily read and choose from your dishes and drinks. Our large print menus offer:\n\n• Clear readability: Large, clear letters and a well-organized layout.\n\n• Stylish and professional: Perfectly suited for your restaurant without sacrificing elegance.\n\n• Fully customizable: Add your own logo, branding, and menu items for a unique look.\n\nWith large print menus, you ensure that all your guests feel welcome and comfortable, regardless of visual limitations. Take the first step towards an inclusive dining experience!"
+    },
+    "3": {
+      "naam": "Light field magnifiers for visually impaired",
+      "beschrijving": "Enhance the accessibility of your menu with our light field magnifiers, specially designed for visually impaired guests. These magnifiers ensure that guests can effortlessly read your menu and make their choices independently.\nOur light field magnifiers offer:\n\n• Outstanding magnification – Clear and sharp vision without distortion.\n\n• Compact and stylish – Lightweight and discreet, perfect for the table.\n\n• Easy to use – No batteries required, ready for immediate use.With light field magnifiers, you provide a welcoming and inclusive dining experience. \n\nMake your restaurant more accessible and let every guest enjoy a carefree meal!"
     }
   }
 }

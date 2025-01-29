@@ -15,6 +15,14 @@ export const producten = [
     naam: 'products.2.naam',
     beschrijving: 'products.2.beschrijving',
   },
+  {
+    id: 3,
+    foto1: '/vgg.jpg',
+    foto2: '/vgg2.jpg',
+    alt: 'Afbeeldingen van lichtveldloepen voor slechtzienden',
+    naam: 'products.3.naam',
+    beschrijving: 'products.3.beschrijving',
+  },
 ];
 
 export const productenExtra = [
@@ -55,6 +63,25 @@ je gerechten en drankjes kunnen lezen en kiezen. Onze vergrote menukaarten biede
 
 Met vergrote menukaarten zorg je ervoor dat al je gasten zich welkom en comfortabel voelen, 
 ongeacht hun visuele beperkingen. Zet de eerste stap naar een inclusieve eetervaring!`,
+  },
+  {
+    id: 3,
+    foto1: '/vgg.jpg',
+    foto2: '/vgg2.jpg',
+    alt: 'Afbeelding van lichtveldloepen voor slechtzienden',
+    naam: 'Lichtveldloepen voor slechtzienden',
+    beschrijving: 'Verbeter de toegankelijkheid van je menukaart met onze lichtveldloepen, '+
+    'speciaal ontworpen voor slechtziende klanten. Deze loepen zorgen ervoor dat gasten moeiteloos '+
+    'je menu kunnen lezen en zelfstandig hun keuze kunnen maken. ' +
+
+'Onze lichtveldloepen bieden: ' +
+
+'• Uitmuntende vergroting – Helder en scherp zicht zonder vervorming. ' + 
+'• Compact en stijlvol – Lichtgewicht en discreet, perfect voor op tafel. ' + 
+'• Gebruiksvriendelijk – Geen batterijen nodig, direct klaar voor gebruik. ' + 
+
+'Met lichtveldloepen bied je een gastvrije en inclusieve horeca-ervaring. ' + 
+'Maak je restaurant toegankelijker en laat elke gast genieten van een zorgeloze maaltijd!',
   },
 ];
 

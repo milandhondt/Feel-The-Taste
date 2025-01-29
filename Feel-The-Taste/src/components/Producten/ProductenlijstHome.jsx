@@ -31,7 +31,7 @@ const Productenlijst = ({ producten = [], m }) => {
             <Tr key={rowIndex}>
               {row.map((product) => (
                 <Td key={product.id} textAlign="center">
-                  <ProductHome naam={t(product.naam)} foto1={product.foto1} />
+                  <ProductHome naam={t(product.naam)} foto1={product.foto1} beschrijving={t(product.beschrijving)} />
                 </Td>
               ))}
               {row.length < 2 && <Td />}

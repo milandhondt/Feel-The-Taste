@@ -59,8 +59,8 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
               src={foto}
               alt={alt}
               height={{ base: '200px', md: '250px' }}
-              width={{ base: '200px', md: '250px' }}
-              objectFit="contain"
+              width={{ base: '190px', md: '200px' }}
+              objectFit="fill"
               transition="transform 0.5s ease"
               _hover={{ transform: 'scale(1.1)' }}
               onClick={() => setSelectedImage(foto)}

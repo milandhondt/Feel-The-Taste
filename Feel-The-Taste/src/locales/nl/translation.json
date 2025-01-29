@@ -24,7 +24,7 @@
   "contact_form_toast_success_description": "Uw bericht is succesvol verzonden. We nemen snel contact met u op.",
   "contact_form_toast_error_title": "Fout opgetreden.",
   "contact_form_toast_error_description": "Er is een fout opgetreden. Probeer het opnieuw.",
-  "services_and_products_title": "Diensten & Producten",
+  "services_and_products_title": "Aanbod",
   "services_title": "Diensten",
   "services_text_1": "Bij Feel The Taste verbeteren we de toegankelijkheid van horecazaken voor blinden, slechtzienden en mensen met visuele beperkingen. We helpen restaurants en cafés om hun menuaanbod toegankelijker te maken, zodat al hun gasten zelfstandig keuzes kunnen maken.",
   "services_text_2": "Onze focus ligt niet alleen op het aanbieden van producten, maar ook op het ondersteunen van horecazaken bij het creëren van een inclusieve omgeving. Samen kunnen we bewustzijn creëren over het belang van inclusie in de horeca.",
@@ -117,7 +117,7 @@
   "navbar_about": "Over ons",
   "navbar_contact": "Contact",
   "navbar_more": "Meer",
-  "navbar_services": "Diensten & Producten",
+  "navbar_services": "Aanbod",
   "navbar_for_horeca": "Voor horeca",
   "navbar_for_blind_and_visually_impaired": "Voor blinden en slechtzienden",
   "navbar_collaborations": "Samenwerkingen",
@@ -150,6 +150,10 @@
     "2": {
       "naam": "Vergrote menukaarten voor slechtzienden",
       "beschrijving": "Zorg voor toegankelijkheid met onze vergrote menukaarten. Duidelijk leesbaar, stijlvol en volledig personaliseerbaar. Een eenvoudige manier om alle gasten een zorgeloze ervaring te bieden!"
+    },
+    "3": {
+      "naam": "Lichtveldloepen voor slechtzienden",
+      "beschrijving": "De lichtveldloepen van Feel The Taste zijn ontworpen om slechtzienden een betere horeca-ervaring te bieden. Dankzij hun compacte en gebruiksvriendelijke ontwerp vergroten en verhelderen ze menukaarten, waardoor lezen in verschillende lichtomstandigheden eenvoudiger wordt. Deze loepen helpen om details scherper te zien, zodat gasten zelfstandiger hun keuze kunnen maken en optimaal kunnen genieten van hun restaurantbezoek."
     }
   },
   "productsExtra": {
@@ -160,6 +164,10 @@
     "2": {
       "naam": "Vergrote menukaarten voor slechtzienden",
       "beschrijving": "Maak je menuaanbod toegankelijker voor slechtzienden met onze vergrote menukaarten. Deze kaarten zijn speciaal ontworpen voor klanten met een verminderd zicht, zodat zij zonder moeite je gerechten en drankjes kunnen lezen en kiezen. Onze vergrote menukaarten bieden:\n\n• Duidelijke leesbaarheid: Grote, heldere letters en een overzichtelijke indeling.\n\n• Stijlvol en professioneel: Past perfect bij uw restaurant zonder aan elegantie in te boeten.\n\n• Volledig personaliseerbaar: Voeg je eigen logo, huisstijl en menu-items toe voor een unieke uitstraling.\n\nMet vergrote menukaarten zorg je ervoor dat al je gasten zich welkom en comfortabel voelen, ongeacht hun visuele beperkingen. Zet de eerste stap naar een inclusieve eetervaring!"
+    },
+    "3": {
+      "naam": "Lichtveldloepen voor slechtzienden",
+      "beschrijving": "Verbeter de toegankelijkheid van je menukaart met onze lichtveldloepen, speciaal ontworpen voor slechtziende klanten. Deze loepen zorgen ervoor dat gasten moeiteloos je menu kunnen lezen en zelfstandig hun keuze kunnen maken.\nOnze lichtveldloepen bieden:\n\n• Uitmuntende vergroting – Helder en scherp zicht zonder vervorming.\n\n• Compact en stijlvol – Lichtgewicht en discreet, perfect voor op tafel.\n\n• Gebruiksvriendelijk – Geen batterijen nodig, direct klaar voor gebruik.Met lichtveldloepen bied je een gastvrije en inclusieve horeca-ervaring. \n\nMaak je restaurant toegankelijker en laat elke gast genieten van een zorgeloze maaltijd!"
     }
   }
 }

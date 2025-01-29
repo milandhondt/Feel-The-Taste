@@ -24,7 +24,7 @@
   "contact_form_toast_success_description": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden Sie bald kontaktieren.",
   "contact_form_toast_error_title": "Fehler aufgetreten.",
   "contact_form_toast_error_description": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-  "services_and_products_title": "Dienstleistungen & Produkte",
+  "services_and_products_title": "Angebot",
   "productenlijst_title": "Unsere Produkte",
   "productentiteltje": "Produkte",
   "services_title": "Dienstleistungen",
@@ -119,7 +119,7 @@
   "navbar_about": "Über uns",
   "navbar_contact": "Kontakt",
   "navbar_more": "Mehr",
-  "navbar_services": "Dienste & Produkte",
+  "navbar_services": "Angebot",
   "navbar_for_horeca": "Für die Gastronomie",
   "navbar_for_blind_and_visually_impaired": "Für Blinde und Sehbehinderte",
   "navbar_collaborations": "Zusammenarbeit",
@@ -148,6 +148,10 @@
     "2": {
       "naam": "Großdruck-Menüs für Sehbehinderte",
       "beschrijving": "Stellen Sie mit unseren Großdruck-Menüs Barrierefreiheit sicher. Deutlich lesbar, stilvoll und vollständig anpassbar. Eine einfache Möglichkeit, allen Gästen ein nahtloses Erlebnis zu bieten!"
+    },
+    "3": {
+      "naam": "Lichtfeldlupen für Sehbehinderte",
+      "beschrijving": "Die Lichtfeldlupen von Feel The Taste sind darauf ausgelegt, sehbehinderten Menschen ein besseres Gastronomieerlebnis zu bieten. Durch ihr kompaktes und benutzerfreundliches Design vergrößern und verbessern sie die Lesbarkeit von Speisekarten, sodass das Lesen unter verschiedenen Lichtverhältnissen erleichtert wird. Diese Lupen helfen, Details schärfer zu erkennen, damit Gäste ihre Wahl selbstständig treffen und ihren Restaurantbesuch in vollen Zügen genießen können."
     }
   },
   "productsExtra": {
@@ -158,6 +162,10 @@
     "2": {
       "naam": "Großdruck-Menüs für Sehbehinderte",
       "beschrijving": "Machen Sie Ihre Menüangebote für sehbehinderte Menschen zugänglicher mit unseren Großdruck-Menüs. Diese Menüs sind speziell für Kunden mit eingeschränktem Sehvermögen entwickelt, damit sie Ihre Gerichte und Getränke problemlos lesen und auswählen können. Unsere Großdruck-Menüs bieten:\n\n• Klare Lesbarkeit: Große, klare Buchstaben und ein gut organisiertes Layout.\n\n• Stilvoll und professionell: Perfekt für Ihr Restaurant geeignet, ohne Eleganz zu opfern.\n\n• Vollständig anpassbar: Fügen Sie Ihr eigenes Logo, Branding und Menüeinträge für ein einzigartiges Aussehen hinzu.\n\nMit Großdruck-Menüs stellen Sie sicher, dass sich alle Ihre Gäste willkommen und wohl fühlen, unabhängig von visuellen Einschränkungen. Machen Sie den ersten Schritt zu einem inklusiven Restauranterlebnis!"
+    },
+    "3": {
+      "naam": "Lichtfeldlupen für Sehbehinderte",
+      "beschrijving": "Verbessern Sie die Zugänglichkeit Ihrer Speisekarte mit unseren Lichtfeldlupen, die speziell für sehbehinderte Gäste entwickelt wurden. Diese Lupen ermöglichen es Ihren Gästen, die Speisekarte mühelos zu lesen und ihre Wahl selbstständig zu treffen.\nUnsere Lichtfeldlupen bieten:\n\n• Hervorragende Vergrößerung – Klare und scharfe Sicht ohne Verzerrung.\n\n• Kompakt und stilvoll – Leicht und unauffällig, perfekt für den Tisch.\n\n• Benutzerfreundlich – Keine Batterien erforderlich, sofort einsatzbereit.Mit Lichtfeldlupen schaffen Sie ein gastfreundliches und inklusives Restauranterlebnis. \n\nMachen Sie Ihr Restaurant zugänglicher und ermöglichen Sie jedem Gast ein unbeschwertes Essen!"
     }
   }
 }
