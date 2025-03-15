@@ -9,6 +9,7 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
 
   // Responsieve afbeeldingshoogte
   const imageHeight = useBreakpointValue({ base: '250px', md: '400px' });
+  const imageWidth = useBreakpointValue({base: '250px', md: '350px'});
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
 
   return (
@@ -22,7 +23,8 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
           src={foto1}
           alt={naam}
           height={imageHeight}
-          objectFit="contain"
+          width={imageWidth}
+          objectFit="fill"
           borderRadius="md"
           cursor="pointer"
           onClick={() => setIsModalOpen(true)}

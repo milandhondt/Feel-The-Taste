@@ -4,6 +4,7 @@ import Tussentitel from '../../components/Tussentitel';
 import Tekstblok from '../../components/Tekstblok';
 import FotoComp from '../../components/FotoComp';
 import { useTranslation } from 'react-i18next';
+import { supporters } from '../../api/supporters';
 
 const SteunOnsProject = () => {
   const { t } = useTranslation();
@@ -16,11 +17,8 @@ const SteunOnsProject = () => {
         <Tekstblok tekst={t('support_project_text1')} />
         <Tekstblok tekst={t('support_project_text2')} />
         <Tekstblok tekst={t('support_project_text3')} />
-        <Text ml={5} mr={5} align={'center'} fontStyle={'italic'}>
-          {t('binnenkort_beschikbaar')}          
-        </Text>
         <Link
-          href="https://crowdfundinglink.com"
+          href="https://nl.ulule.com/feel-the-taste--an-inclusive-hospitality-experience-for-all/"
           isExternal
           color="blue.900"
           fontSize="lg"
@@ -28,24 +26,31 @@ const SteunOnsProject = () => {
         >
           {t('support_project_link')}
         </Link>
+
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
-          <Box textAlign="center">
-            <FotoComp src={'/oo1.jpg'} alt={'Foto van Victor'} height="200px" width="200px" />
-            <Text>Victor Vanden Broucke</Text>
-          </Box>
-          <Box textAlign="center">
-            <FotoComp src={'/oo2.jpg'} alt={'Foto van Maxime'} height="200px" width="200px" />
-            <Text>Maxime Debruyne</Text>
-          </Box>
-          <Box textAlign="center">
-            <FotoComp src={'/oo3.jpg'} alt={'Foto van Jarno'} height="200px" width="200px" />
-            <Text>Jarno Van Quaquebeke</Text>
-          </Box>
-          <Box textAlign="center">
-            <FotoComp src={'/oo4.jpg'} alt={'Foto van Matisse'} height="200px" width="200px" />
-            <Text>Matisse Goudeseune</Text>
-          </Box>
+          {[
+            { name: 'Victor Vanden Broucke', photo: '/oo1.jpg' },
+            { name: 'Maxime Debruyne', photo: '/oo2.jpg' },
+            { name: 'Jarno Van Quaquebeke', photo: '/oo3.jpg' },
+            { name: 'Matisse Goudeseune', photo: '/oo4.jpg' },
+          ].map((person, index) => (
+            <Box key={index} textAlign="center">
+              <FotoComp src={person.photo} alt={`Foto van ${person.name}`} height="200px" width="200px" />
+              <Text>{person.name}</Text>
+            </Box>
+          ))}
         </SimpleGrid>
+
+        <Tussentitel titel={t('our_supporters_title')} />
+        <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
+          {supporters.map((supporter) => (
+            <Box key={supporter.id} textAlign="center">
+              <Text>{supporter.naam}</Text>
+              <Text>{'€' + supporter.bijdrage}</Text>
+            </Box>
+          ))}
+        </SimpleGrid>
+
         <Text fontWeight={'bold'} fontSize={'2xl'}>
           {t('thank_you_for_support_text')}
         </Text>
