@@ -45,8 +45,8 @@ const SteunOnsProject = () => {
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">
           {supporters.map((supporter) => (
             <Box key={supporter.id} textAlign="center">
-              <Text>{supporter.naam}</Text>
-              <Text>{'€' + supporter.bijdrage}</Text>
+              <Text fontSize={'xl'}>{supporter.naam}</Text>
+              <Text fontSize={'xl'}>{'€' + supporter.bijdrage}</Text>
             </Box>
           ))}
         </SimpleGrid>

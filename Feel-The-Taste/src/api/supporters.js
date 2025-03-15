@@ -7,6 +7,6 @@ export const supporters = [
   {
     id: 2,
     naam: 'decorte-lars',
-    bijdrage: 10,
+    bijdrage: 50,
   },
 ];
