@@ -23,6 +23,14 @@ export const producten = [
     naam: 'products.3.naam',
     beschrijving: 'products.3.beschrijving',
   },
+  {
+    id: 4,
+    foto1: 'bb1.jpg',
+    foto2: 'bb2.jpg',
+    alt: 'Afbeelding van een braille bordje voor slechtzienden',
+    naam: 'products.4.naam',
+    beschrijving: 'products.4.beschrijving',
+  },
 ];
 
 export const productenExtra = [
@@ -82,6 +90,25 @@ ongeacht hun visuele beperkingen. Zet de eerste stap naar een inclusieve eeterva
 
 'Met lichtveldloepen bied je een gastvrije en inclusieve horeca-ervaring. ' + 
 'Maak je restaurant toegankelijker en laat elke gast genieten van een zorgeloze maaltijd!',
+  },
+  {
+    id: 4,
+    foto1: 'bb1.jpg',
+    foto2: 'bb2.jpg',
+    alt: 'Afbeelding van een braille bordje voor slechtzienden',
+    naam: 'Braille bordje voor slechtzienden',
+    beschrijving: 'Verbeter de toegankelijkheid van je restaurant met onze braille bordjes, ' +
+  'speciaal ontworpen voor slechtziende en blinde klanten. Deze bordjes zorgen ervoor dat gasten moeiteloos ' +
+  'belangrijke informatie kunnen lezen en zelfstandig hun weg kunnen vinden. ' +
+
+  'Onze braille bordjes bieden: ' +
+
+  '• Duidelijke braillemarkeringen – Intuïtief en gemakkelijk te lezen voor blinden en slechtzienden. ' + 
+  '• Duurzaam en stijlvol – Gemaakt van hoogwaardige materialen die lang meegaan. ' + 
+  '• Veelzijdig inzetbaar – Perfect voor menukaarten, tafelnummers en wegwijzers. ' + 
+
+  'Met braille bordjes bied je een gastvrije en inclusieve horeca-ervaring. ' + 
+  'Maak je restaurant toegankelijker en laat elke gast genieten van een zorgeloze maaltijd!',
   },
 ];
 
