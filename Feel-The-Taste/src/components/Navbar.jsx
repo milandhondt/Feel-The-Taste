@@ -21,7 +21,7 @@ const Navbar = () => {
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <NavLink to="/home">
           <Flex alignItems="center">
-            <Image src="/logozwart.jpg" alt="Logo" h={12} mr={4} />
+            <Image src="/logozwart.jpg" alt="Logo" height={12} width={12} mr={4} />
             <Text fontSize="2xl" color="#e6e6e6" fontWeight="bold">{t('navbar_home')}</Text>
           </Flex>
         </NavLink>

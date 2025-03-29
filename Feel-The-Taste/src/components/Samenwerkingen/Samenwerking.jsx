@@ -7,7 +7,7 @@ const Samenwerking = ({ foto, alt, beschrijving }) => {
         src={foto}
         alt={alt}
         boxSize="200px"
-        objectFit="cover"
+        objectFit="contain"
         borderRadius="md"
       />
       <Text textAlign="center" fontSize="md" color="gray.800">

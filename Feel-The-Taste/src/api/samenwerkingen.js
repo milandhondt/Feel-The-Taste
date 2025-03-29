@@ -1,20 +1,20 @@
 export const samenwerkingen = [
   {
     id: 1,
-    foto: '/comingsoon.jpg',
-    alt: 'samenwerking 1',
-    beschrijving:'Coming soon.',
+    foto: '/partner1.jpeg',
+    alt: 'Foto van het logo van de vismarkt aan zee',
+    beschrijving:'De vismarkt aan zee',
   },
   {
     id: 2,
-    foto: '/comingsoon.jpg',
-    alt: 'samenwerking 2',
-    beschrijving:'Coming soon.',
+    foto: '/partner2.jpeg',
+    alt: 'Foto van het logo van Unizo',
+    beschrijving:'Unizo',
   },
   {
     id: 3,
-    foto: '/comingsoon.jpg',
-    alt: 'samenwerking 3',
-    beschrijving:'Coming soon.',
+    foto: '/partner3.jpeg',
+    alt: 'Foto van het logo van Artevelde Hogeschool',
+    beschrijving:'Artevelde Hogeschool',
   },
 ];

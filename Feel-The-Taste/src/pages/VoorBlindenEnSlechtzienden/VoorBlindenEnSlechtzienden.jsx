@@ -47,8 +47,8 @@ const VoorBlindenEnSlechtzienden = () => {
         <Tekstblok tekst={t('voor_blinden_contact_us')} />
 
         <Link to="/contact">
-          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} size="lg">
-            {t('contact_button_text')}
+          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} width={275} height={65} m={4} fontSize={'xl'}>
+            {t('contact_button')}
           </Button>
         </Link>
       </VStack>

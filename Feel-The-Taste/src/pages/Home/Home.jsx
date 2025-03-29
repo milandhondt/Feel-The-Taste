@@ -10,6 +10,7 @@ import Tekstblok from '../../components/Tekstblok';
 import Tussentitel from '../../components/Tussentitel';
 import ProductenlijstHome from '../../components/Producten/ProductenlijstHome';
 import { producten } from '../../api/producten';
+import { useBreakpointValue } from '@chakra-ui/react';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -18,15 +19,18 @@ const Home = () => {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
+  const logoSize = useBreakpointValue({ base: '250px', sm: '200px', md: '380px' });
+
   return (
     <Box minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4} m={4}>
       <VStack spacing={6} m={4}>
         <Titel titel={t('welcome')} m={28} />
 
         <Image
-          src="/logotje.png"
+          src="/logotje.webp"
           alt="Logo van feel the taste"
-          boxSize="280px"
+          height={logoSize}
+          width={logoSize}
           objectFit="cover"
           m={4}
           cursor="pointer"
@@ -54,7 +58,7 @@ const Home = () => {
         <Tussentitel titel={t('questions_title')} m={8} />
         <Tekstblok tekst={t('questions_text')} m={12} />
         <Link to="/contact">
-          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} size="lg" m={4}>
+          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} width={275} height={65} m={4} fontSize={'xl'}>
             {t('contact_button')}
           </Button>
         </Link>
