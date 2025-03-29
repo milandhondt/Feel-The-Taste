@@ -34,8 +34,6 @@ const VoorBlindenEnSlechtzienden = () => {
         <Tussentitel titel={t('voor_blinden_where_to_find')} />
         <Text textAlign="center" ml={{ base: 4, md: 10, lg: 40 }} mr={{ base: 4, md: 10, lg: 40 }}>
           {t('voor_blinden_where_to_find_text')}
-          <Link to="/samenwerkingen" style={{ textDecoration: 'underline', color: '#2c5282' }}>
-            {t('voor_blinden_here_link')}</Link>.
         </Text>
 
         <Tussentitel titel={t('voor_blinden_help_us')} />

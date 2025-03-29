@@ -1,69 +1,110 @@
-import {
-  Box, Button, VStack, Image, Modal, ModalOverlay, ModalContent,
-  ModalCloseButton, ModalBody,
-} from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
-import Titel from '../../components/Titel';
-import Tekstblok from '../../components/Tekstblok';
-import Tussentitel from '../../components/Tussentitel';
+import { Link } from 'react-router-dom';
 import ProductenlijstHome from '../../components/Producten/ProductenlijstHome';
 import { producten } from '../../api/producten';
-import { useBreakpointValue } from '@chakra-ui/react';
 
 const Home = () => {
   const { t } = useTranslation();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  const logoSize = useBreakpointValue({ base: '250px', sm: '200px', md: '380px' });
 
   return (
-    <Box minH="100vh" display="flex" justifyContent="center" alignItems="center" p={4} m={4}>
-      <VStack spacing={6} m={4}>
-        <Titel titel={t('welcome')} m={28} />
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '1rem',
+      margin: '1rem'
+    }}>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '1.5rem',
+        margin: '1rem'
+      }}>
+        <h1 style={{
+          fontSize: '3rem',
+          fontWeight: 'bold',
+          margin: '7rem 1.75rem',
+          textAlign: 'center'
+        }}>
+          {t('welcome')}
+        </h1>
 
-        <Image
-          src="/logotje.webp"
+        <img
+          srcSet="/logotje-mobile.webp 200w, /logotje.webp 400w"
+          sizes="(max-width: 600px) 200px, 380px"
           alt="Logo van feel the taste"
-          height={logoSize}
-          width={logoSize}
-          objectFit="cover"
-          m={4}
-          cursor="pointer"
-          onClick={openModal}
+          style={{
+            width: '100%',
+            height: 'auto',
+            maxWidth: '380px',
+            aspectRatio: '1/1',
+            objectFit: 'cover'
+          }}
+          loading="eager"
         />
 
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <ModalOverlay />
-          <ModalContent>
-            <ModalCloseButton />
-            <ModalBody display="flex" justifyContent="center">
-              <Image
-                src="/logotje.png"
-                alt="Logo van feel the taste"
-                boxSize="600px"
-                objectFit="contain"
-              />
-            </ModalBody>
-          </ModalContent>
-        </Modal>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          margin: '0.5rem 5rem',
+          textAlign: 'center'
+        }}>
+          {t('accessible_menus')}
+        </h2>
 
-        <Tussentitel titel={t('accessible_menus')} m={8} />
-        <Tekstblok tekst={t('main_text')} m={12} />
+        <p style={{
+          fontSize: '1.1rem',
+          lineHeight: '1.6',
+          margin: '0.5rem 5rem',
+          textAlign: 'center',
+          maxWidth: '600px'
+        }}>
+          {t('main_text')}
+        </p>
+
         <ProductenlijstHome producten={producten} heeftKnop={true} m={4} />
-        <Tussentitel titel={t('questions_title')} m={8} />
-        <Tekstblok tekst={t('questions_text')} m={12} />
-        <Link to="/contact">
-          <Button bg="gray.800" color="white" _hover={{ bg: 'gray.600' }} width={275} height={65} m={4} fontSize={'xl'}>
+
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          margin: '0.5rem 5rem',
+          textAlign: 'center'
+        }}>
+          {t('questions_title')}
+        </h2>
+
+        <p style={{
+          fontSize: '1.1rem',
+          lineHeight: '1.6',
+          margin: '0.5rem 5rem',
+          textAlign: 'center',
+          maxWidth: '600px'
+        }}>
+          {t('questions_text')}
+        </p>
+
+        <Link to="/contact" style={{ textDecoration: 'none' }}>
+          <button style={{
+            backgroundColor: '#1a202c',
+            color: 'white',
+            width: '275px',
+            height: '65px',
+            fontSize: '1.25rem',
+            margin: '1rem',
+            cursor: 'pointer',
+            border: 'none',
+            borderRadius: '0.375rem',
+            transition: 'background-color 0.2s'
+          }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#4a5568'}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#1a202c'}>
             {t('contact_button')}
-          </Button>
+          </button>
         </Link>
-      </VStack>
-    </Box>
+      </div>
+    </div>
   );
 };
 

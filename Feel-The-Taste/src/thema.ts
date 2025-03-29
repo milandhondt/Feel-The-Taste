@@ -15,8 +15,8 @@ const thema = extendTheme({
     },
   },
   fonts: {
-    heading: "Josefin Sans",
-    body: "Josefin Sans",
+    heading: "'Avenir', 'Arial', 'sans-serif'",
+    body: "'Avenir', 'Arial', 'sans-serif'"
   },
 });
 

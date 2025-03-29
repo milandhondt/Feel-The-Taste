@@ -1,9 +1,8 @@
-import { Box, VStack, SimpleGrid, Text, Link } from '@chakra-ui/react';
+import { Box, VStack, SimpleGrid, Text } from '@chakra-ui/react';
 import Titel from '../../components/Titel';
 import Tussentitel from '../../components/Tussentitel';
 import Tekstblok from '../../components/Tekstblok';
 import FotoComp from '../../components/FotoComp';
-import { Link as RouterLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Sponsors = () => {
@@ -17,8 +16,7 @@ const Sponsors = () => {
         <Tekstblok tekst={t('support_inclusivity_text')} />
         <Tekstblok tekst={
           <>
-            {t('sponsor_contact_text')} <Link as={RouterLink} to="/contact"
-              color="blue.900" textDecoration="underline">{t('link')}</Link>.
+            {t('sponsor_contact_text')}
           </>
         } />
         <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} justifyItems="center">

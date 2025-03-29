@@ -69,7 +69,14 @@ const VoorHoreca = () => {
         <Text textAlign="center">{t('voor_horeca_solutions_text')}</Text>
 
         <Text textAlign="center">
-          {t('voor_horeca_solutions_list')}
+          {t('voor_horeca_solutions_list1')}
+          <br/>          <br/>
+
+          {t('voor_horeca_solutions_list2')}
+          <br/>          <br/>
+
+          {t('voor_horeca_solutions_list3')}
+
         </Text>
 
         <Tussentitel titel={t('voor_horeca_how_it_works_title')} />

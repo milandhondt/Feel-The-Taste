@@ -14,7 +14,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logoborder.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/logotje.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="/logotje-mobile.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="/logozwart.webp" as="image" fetchpriority="high">
 
   <title>Feel The Taste</title>
   <meta name="description"
@@ -33,12 +35,23 @@
   <meta name="twitter:description"
     content="Een platform voor inclusiviteit in de horeca voor blinden en slechtzienden, met menukaarten in braille en QR-codes met audio." />
   <meta name="twitter:url" content="https://feelthetaste.be" />
+
+  <style>
+    .css-kpgbyl {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #333;
+      margin: 0;
+      opacity: 1;
+    }
+  </style>
+
 </head>
 
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/main.jsx" defer></script>
 </body>
 
 </html>
