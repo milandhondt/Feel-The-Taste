@@ -25,7 +25,7 @@ const Home = () => {
         <h1 style={{
           fontSize: '3rem',
           fontWeight: 'bold',
-          margin: '7rem 1.75rem',
+          margin: '4rem 4rem',
           textAlign: 'center'
         }}>
           {t('welcome')}
