@@ -8,8 +8,7 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Responsieve afbeeldingshoogte
-  const imageHeight = useBreakpointValue({ base: '250px', md: '400px' });
-  const imageWidth = useBreakpointValue({base: '250px', md: '350px'});
+  const imageHeight = useBreakpointValue({ base: '200px', md: '350px' });
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
 
   return (
@@ -23,7 +22,7 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
           src={foto1}
           alt={naam}
           height={imageHeight}
-          width={imageWidth}
+          width={imageHeight}
           objectFit="fill"
           borderRadius="md"
           cursor="pointer"

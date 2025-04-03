@@ -65,6 +65,7 @@ const Product = ({ foto1, foto2, alt, naam, beschrijving, heeftKnop }) => {
               _hover={{ transform: 'scale(1.1)' }}
               onClick={() => setSelectedImage(foto)}
               cursor="pointer"
+              loading='lazy'
             />
           ))}
         </HStack>

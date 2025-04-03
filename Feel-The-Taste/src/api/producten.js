@@ -9,7 +9,7 @@ export const producten = [
   },
   {
     id: 2,
-    foto1: '/p2a.png',
+    foto1: '/p2a.jpg',
     foto2: '/p2b.png',
     alt: 'Afbeelding van papieren vergrote menukaarten, gemaakt door Feel The Taste',
     naam: 'products.2.naam',
@@ -56,7 +56,7 @@ samenleving. Laat iedereen mee genieten van jouw culinaire aanbod, zonder barri√
   },
   {
     id: 2,
-    foto1: '/p2a.png',
+    foto1: '/p2a.jpg',
     foto2: '/p2b.png',
     alt: 'Afbeelding van vergrote menukaarten voor slechtzienden',
     naam: 'Vergrote menukaarten voor slechtzienden',
