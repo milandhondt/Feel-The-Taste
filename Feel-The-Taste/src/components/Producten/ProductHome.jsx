@@ -8,7 +8,7 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Responsieve afbeeldingshoogte
-  const imageHeight = useBreakpointValue({ base: '200px', md: '350px' });
+  const imageSize = useBreakpointValue({ base: '160px', md: '350px' });
   const textFontSize = useBreakpointValue({ base: 'lg', md: 'xl' });
 
   return (
@@ -21,9 +21,7 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
         <Image
           src={foto1}
           alt={naam}
-          height={imageHeight}
-          width={imageHeight}
-          objectFit="fill"
+          boxSize={imageSize}
           borderRadius="md"
           cursor="pointer"
           onClick={() => setIsModalOpen(true)}
@@ -39,18 +37,19 @@ const ProductHome = ({ naam, foto1, beschrijving }) => {
             <Stack
               direction={{ base: 'column', md: 'row' }}
               spacing={{ base: 4, md: 6 }}
-              align={{ base: 'center', md: 'start' }}
+              align="center"
+              textAlign={{ base: 'center', md: 'left' }} // Tekst centreren op mobiel
               p={4}
             >
               {/* Vergrote afbeelding */}
               <Image
                 src={foto1}
                 alt={naam}
-                height={imageHeight}
+                boxSize={imageSize}
                 objectFit="contain"
                 borderRadius="md"
               />
-              {/* Beschrijving */}
+
               <Box flex="1" textAlign={{ base: 'center', md: 'left' }}>
                 <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="bold" mb={4}>
                   {naam}
