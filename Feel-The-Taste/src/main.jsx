@@ -15,6 +15,7 @@ import Samenwerkingen from './pages/Samenwerkingen/Samenwerkingen';
 import SteunOns from './pages/SteunOns/SteunOns';
 import Testimonials from './pages/Testimonials/Testimonials';
 import Sponsors from './pages/Sponsors/Sponsors';
+import AlgemeneVoorwaarden from './pages/Algemene Voorwaarden/AlgemeneVoorwaarden';
 import './i18n/i18n';
 
 const router = createBrowserRouter([
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: '/voor-blinden-en-slechtzienden',
         element: <VoorBlindenEnSlechtzienden />,
+      },
+      {
+        path: '/algemene-voorwaarden',
+        element: <AlgemeneVoorwaarden />,
       },
       { path: '*', element: <NotFound /> },
     ],

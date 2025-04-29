@@ -1,6 +1,7 @@
 import { Box, Text, Link, Flex, Image } from '@chakra-ui/react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -33,6 +34,10 @@ const Footer = () => {
               </Link>
             </Text>
             <Text fontSize={'lg'}>{t('footer_phone')}</Text>
+            <Text>
+              <Link as={RouterLink} to="/algemene-voorwaarden" textDecoration="underline">
+                {t('footer_terms')}
+              </Link>            </Text>
           </Box>
         </Flex>
 
