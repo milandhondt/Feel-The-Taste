@@ -221,5 +221,14 @@
   "privacy_section6_title": "6. Security",
   "privacy_section6_content": "Feel The Taste implements appropriate technical and organizational measures to protect personal data against loss, unauthorized access, or misuse.",
   "privacy_section7_title": "7. No Disclosure to Third Parties",
-  "privacy_section7_content": "Personal data will never be sold or shared with third parties without your explicit consent, unless required by law."
+  "privacy_section7_content": "Personal data will never be sold or shared with third parties without your explicit consent, unless required by law.",
+  "home": {
+    "title": "Poof! And just like that, we're gone…",
+    "subtitle": "Our website has retired. 🧓💻",
+    "description1": "After a few months of faithful service, it's time for a well-deserved digital siesta.",
+    "description2": "But hey, the domain is sticking around a little longer. Why? No idea really. Maybe to sniff old memories. Or to cause some confusion. 😅",
+    "thanks": "Thanks for clicking, scrolling, and getting lost.",
+    "goodbye": "See you on another corner of the internet!"
+  },
+  "no_contact": "It is no longer possible to get in touch. This project has been completed and is no longer actively maintained. Thank you for your interest!"
 }
